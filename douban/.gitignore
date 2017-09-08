@@ -9,4 +9,5 @@ Thumbs.db
 .tmp
 .DS_Store
 target/
-logs/
+log/
+store/
