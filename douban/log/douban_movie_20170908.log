@@ -1,0 +1,2811 @@
+2017-09-08 23:53:39 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: douban)
+2017-09-08 23:53:39 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'douban', 'DOWNLOAD_DELAY': 1, 'FEED_FORMAT': 'csv', 'FEED_URI': 'store/douban_movie.csv', 'LOG_FILE': 'log/douban_movie_20170908.log', 'NEWSPIDER_MODULE': 'douban.spiders', 'SPIDER_MODULES': ['douban.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'}
+2017-09-08 23:53:39 [py.warnings] WARNING: /Users/liujiangping/Documents/projects/github/ping-scrapy/douban/douban/my_item_exporter.py:2: ScrapyDeprecationWarning: Module `scrapy.contrib.exporter` is deprecated, use `scrapy.exporters` instead
+  from scrapy.contrib.exporter import CsvItemExporter
+
+2017-09-08 23:53:39 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-08 23:53:39 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-08 23:53:39 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-08 23:53:39 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-09-08 23:53:39 [scrapy.core.engine] INFO: Spider opened
+2017-09-08 23:53:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-08 23:53:39 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-09-08 23:53:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=> (referer: None)
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:热门
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:热门,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:热门,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:最新
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:最新,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:最新,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:经典
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:经典,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:经典,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:可播放
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:可播放,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:可播放,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:豆瓣高分
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:豆瓣高分,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:豆瓣高分,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:冷门佳片
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:冷门佳片,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:冷门佳片,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:华语
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:华语,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:华语,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:欧美
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:欧美,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:欧美,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:韩国
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:韩国,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:韩国,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:日本
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:日本,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:日本,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:动作
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:动作,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:动作,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:喜剧
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:喜剧,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:喜剧,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:爱情
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:爱情,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:爱情,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:科幻
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:科幻,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:科幻,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:悬疑
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:悬疑,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:悬疑,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:恐怖
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:恐怖,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:恐怖,page_start:20
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:动画
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:动画,page_start:0
+2017-09-08 23:53:39 [douban_movie] INFO: fetch tag:动画,page_start:20
+2017-09-08 23:53:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:46 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://movie.douban.com/subject/26951953/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2017-09-08 23:53:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8F%AF%E6%92%AD%E6%94%BE&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8F%AF%E6%92%AD%E6%94%BE&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%9C%80%E6%96%B0&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%9C%80%E6%96%B0&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:53:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:54:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:54:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26892546/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26892546/>
+{'adaptors': '乔伊思·卡罗尔·奥特兹/弗朗索瓦·欧容/菲利普·皮亚佐',
+ 'country': ' 法国 / 比利时',
+ 'directors': '弗朗索瓦·欧容',
+ 'genre': '剧情/爱情/惊悚',
+ 'rate': '6.9',
+ 'release_date': '2017-05-26(戛纳电影节/法国)',
+ 'runtime': '107分钟',
+ 'starring': '玛丽恩·瓦科特/热雷米·勒尼埃/杰奎琳·比塞特/米丽娅姆·博耶/多米尼克·雷蒙/安托万·德·拉·莫利内利/让-保尔·米埃尔/贝诺提·吉欧斯',
+ 'title': "双面情人 L'amant double"}
+2017-09-08 23:54:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26828019/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26828019/>
+{'adaptors': '杨曼珠',
+ 'country': ' 中国大陆',
+ 'directors': '王啸坤',
+ 'genre': '剧情/喜剧',
+ 'rate': '5.4',
+ 'release_date': '2017-04-01(中国大陆)',
+ 'runtime': '99分钟',
+ 'starring': '范伟/贾静雯/刘俊昊/隋凯/宋阳/范湉湉/林更新/薛之谦/赵英俊/孔连顺/刘长生/于笑/李俊豪/柴蔚/张美娥/徐小溢/陈维涵/史耀中/肥龙/马洪磊/宋祖儿',
+ 'title': '有完没完'}
+2017-09-08 23:54:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26289138/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26289138/>
+{'adaptors': '肖李任颐/杨永春/陈林/骆平',
+ 'country': ' 中国大陆',
+ 'directors': '杨永春',
+ 'genre': '剧情/喜剧/爱情',
+ 'rate': '3.4',
+ 'release_date': '2017-06-09(中国大陆)',
+ 'runtime': '90分钟',
+ 'starring': '张子枫/张逸杰/成梓宁/李砚/常铖/王旭东/张诚航/苗皓钧/花希/马泽涵/应亦涵/朱子岩/李扬/郝平/王菁华/塞拉斯·列维·纽豪斯',
+ 'title': '李雷和韩梅梅'}
+2017-09-08 23:54:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/6874033/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/6874033/>
+{'adaptors': '安杰伊·亚基莫夫斯基',
+ 'country': ' 波兰 / 葡萄牙 / 法国 / 英国',
+ 'directors': '安杰伊·亚基莫夫斯基',
+ 'genre': '剧情',
+ 'rate': '8.3',
+ 'release_date': '2012-10-13',
+ 'runtime': '105分钟',
+ 'starring': '亚历山德拉·玛丽亚·拉腊/爱德华·霍格/David Atrakchi',
+ 'title': '美丽心境界 Imagine'}
+2017-09-08 23:54:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25850319/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25850319/>
+{'adaptors': '高橋悠也',
+ 'country': ' 日本',
+ 'directors': '小池健',
+ 'genre': '动作/动画/犯罪',
+ 'rate': '8.6',
+ 'release_date': '2014-06-21(日本)',
+ 'runtime': '51分钟',
+ 'starring': '栗田贯一/小林清志/泽城美雪/山寺宏一/广濑彰勇',
+ 'title': '鲁邦三世：次元大介的墓碑 LUPIN THE IIIRD 次元大介の墓標'}
+2017-09-08 23:54:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/24860289/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/24860289/>
+{'adaptors': '吉勒斯·帕瑞斯/瑟琳·席安玛/杰马诺·祖罗/克洛德·巴拉斯/莫根·纳瓦罗',
+ 'country': ' 瑞士 / 法国',
+ 'directors': '克洛德·巴拉斯',
+ 'genre': '喜剧/动画/儿童',
+ 'rate': '8.3',
+ 'release_date': '2016-05-15(戛纳电影节)/2016-09-22(瑞士)/2016-10-19(法国)',
+ 'runtime': '66分钟',
+ 'starring': '加斯帕德·施拉特/西斯汀·穆拉特/波林·雅库/米歇尔·维耶尔莫/劳尔·里贝拉/埃斯特尔·亨纳德/埃利奥特·桑切斯/卢·威克/布丽奇特·罗塞特/娜塔莎·科奇库莫夫/莫妮卡·布德/阿德里安·巴拉佐尼/维诺妮可·蒙特尔/罗马妮·科瑞特尼/伊芙琳·布维尔/伦纳德·杰纳/安妮-劳雷·布雷西/让-克劳德·伊森曼/伊安尼斯·雅库/埃里克·阿巴特/威尔·福特/尼克·奥弗曼/艾伦·佩吉/玢·罗宾斯/艾米·塞德丽丝/克拉拉·杨',
+ 'title': '西葫芦的生活 Ma vie de courgette'}
+2017-09-08 23:54:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/5327189/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/5327189/>
+{'adaptors': '罗杰·梅因伍德/雷蒙德·布里格斯',
+ 'country': ' 英国',
+ 'directors': '罗杰·梅因伍德',
+ 'genre': '剧情/动画/家庭',
+ 'rate': '8.7',
+ 'release_date': '2016-10-15(伦敦电影节)/2016-10-28(英国)',
+ 'runtime': '94分钟',
+ 'starring': '卢克·崔德威/吉姆·布劳德本特/帕姆·费里斯/布兰达·布莱斯/罗杰·阿拉姆/彼得·怀特/弗吉尼亚·麦肯娜/茱恩·布朗/西蒙·戴/亚历克斯·乔丹',
+ 'title': '伦敦一家人 Ethel & Ernest'}
+2017-09-08 23:54:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25881615/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8F%AF%E6%92%AD%E6%94%BE&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25881615/>
+{'adaptors': '扎克·施坦茨/罗伯托·奥奇/伯克·沙普利斯/马特·萨兹马/阿什利·米勒/约翰·盖汀斯/马克斯·兰迪斯  '
+             '/哈伊姆·萨班/舒基·莱维',
+ 'country': ' 美国 / 香港 / 加拿大',
+ 'directors': '迪恩·以色列特',
+ 'genre': '动作/科幻/冒险',
+ 'rate': '4.6',
+ 'release_date': '2017-05-12(中国大陆)/2017-03-24(美国)',
+ 'runtime': '124分钟',
+ 'starring': '戴克·蒙哥马利/娜奥米·斯科特/RJ·赛勒/林路迪/贝姬·戈麦斯/伊丽莎白·班克斯/布莱恩·科兰斯顿/比尔·哈德尔/马特·夏夫利/科迪·基尔斯利/大卫·丹曼/罗伯特·莫隆尼/安贾莉·杰/莎拉·格雷/摩根·泰勒·坎贝尔',
+ 'title': '超凡战队 Power Rangers'}
+2017-09-08 23:54:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25864124/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8F%AF%E6%92%AD%E6%94%BE&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25864124/>
+{'adaptors': '卓比·哈罗德/盖·里奇/莱昂内尔·威格拉姆/大卫·道金',
+ 'country': ' 美国',
+ 'directors': '盖·里奇',
+ 'genre': '动作/奇幻/冒险',
+ 'rate': '7.2',
+ 'release_date': '2017-05-12(中国大陆/美国)',
+ 'runtime': '126分钟',
+ 'starring': '查理·汉纳姆/裘德·洛/阿斯特丽德·伯格斯-弗瑞斯贝/米卡埃尔·佩斯布兰特/杰曼·翰苏/安娜贝拉·沃丽丝/艾瑞克·巴纳/艾丹·吉伦/尼尔·马斯克尔/赫敏·科菲尔德/凯蒂·麦克格雷斯/杰奎·安斯蕾/弗莱迪·福克斯/波比·迪瓦伊/朱利安·西格尔/大卫·贝克汉姆/杰夫·贝尔/米莉·布拉迪/乔治娜·坎贝尔/丹尼尔·斯蒂森/伊琳·珀威尔/迈克尔·麦克埃尔哈顿/阿德里安·布薛特/彼得·费迪南多/汤姆·吴/金斯利·本-阿德/盖·里奇',
+ 'title': '亚瑟王：斗兽争霸 King Arthur: Legend of the Sword'}
+2017-09-08 23:54:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/24719063/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/24719063/>
+{'adaptors': '曹保平/焦华静',
+ 'country': ' 中国大陆',
+ 'directors': '曹保平',
+ 'genre': '剧情/悬疑/犯罪',
+ 'rate': '7.9',
+ 'release_date': '2015-08-27(中国大陆)/2015-06-15(上海电影节)',
+ 'runtime': '139分钟',
+ 'starring': '邓超/段奕宏/郭涛/王珞丹/吕颂贤/高虎/白柳汐/杜志国',
+ 'title': '烈日灼心'}
+2017-09-08 23:54:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25728010/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25728010/>
+{'adaptors': '柳昇完',
+ 'country': ' 韩国',
+ 'directors': '柳昇完',
+ 'genre': '剧情/动作',
+ 'rate': '7.5',
+ 'release_date': '2015-08-05(韩国)',
+ 'runtime': '124分钟',
+ 'starring': '黄晸玟/刘亚仁/柳海真/吴达洙/郑满植/郑雄仁/张允珠/金时厚/陈庆/刘仁英/朴素丹',
+ 'title': '老手 베테랑'}
+2017-09-08 23:54:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/6875268/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%9C%80%E6%96%B0&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/6875268/>
+{'adaptors': '黛安娜·亨利奎斯/萨姆·李文森/塞缪尔·鲍姆/约翰·伯纳姆·施瓦茨',
+ 'country': ' 美国',
+ 'directors': '巴瑞·莱文森',
+ 'genre': '剧情/传记/历史/犯罪',
+ 'rate': '6.5',
+ 'release_date': '2017-05-20(美国)',
+ 'runtime': '133分钟',
+ 'starring': '罗伯特·德尼罗/米歇尔·菲佛/汉克·阿扎利亚/克里斯汀·康奈利/亚历桑德罗·尼沃拉/莉莉·拉贝/内森·达罗/凯瑟琳·纳杜奇/凯利·奥科/迈克尔·A.戈尔杰/克莱姆·张/迈克尔·卡斯洛夫/波特兰·赫尔米奇/阿曼达·沃伦/杰弗里·坎特尔/马尔塔·米兰斯/马科·查卡/索菲·冯·海索博格/斯蒂芬·考特尔',
+ 'title': '欺诈圣手 The Wizard of Lies'}
+2017-09-08 23:54:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26940049/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%9C%80%E6%96%B0&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26940049/>
+{'adaptors': 'Thiago Cazado',
+ 'country': ' 巴西',
+ 'directors': 'Mauro Carvalho',
+ 'genre': '剧情/爱情/同性',
+ 'rate': '7.1',
+ 'release_date': '',
+ 'runtime': '73分钟',
+ 'starring': 'Thiago Cazado/Mauro Carvalho/Rodrigo Bittes/Leandro '
+             'Menezes/Carmem Moretzsohn/Andreessa Lee',
+ 'title': '我们 Sobre Nós'}
+2017-09-08 23:54:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26946508/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%9C%80%E6%96%B0&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26946508/>
+{'adaptors': '郑秉吉/郑秉希',
+ 'country': ' 韩国',
+ 'directors': '郑秉吉',
+ 'genre': '剧情/动作',
+ 'rate': '6.1',
+ 'release_date': '2017-05-21(戛纳电影节)/2017-06-08(韩国)',
+ 'runtime': '123分钟',
+ 'starring': '金玉彬/申河均/盛骏/金瑞亨/曹恩智/朴哲民/郑海钧',
+ 'title': '恶女 악녀'}
+2017-09-08 23:54:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26362764/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26362764/>
+{'adaptors': '李正燮',
+ 'country': ' 韩国',
+ 'directors': '李沙朗',
+ 'genre': '剧情/动作',
+ 'rate': '5.0',
+ 'release_date': '2017-06-28(韩国)',
+ 'runtime': '137分钟',
+ 'starring': '金秀贤/成东日/韩智恩/李圣旻/崔雪莉/赵宇镇/崔权/郑仁谦/金弘波/李璟荣/丁瑞奇',
+ 'title': '真实 리얼'}
+2017-09-08 23:54:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26290390/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26290390/>
+{'adaptors': '卓然',
+ 'country': ' 中国大陆',
+ 'directors': '宋岳峰',
+ 'genre': '动画',
+ 'rate': '7.5',
+ 'release_date': '2016-08-19(中国大陆)',
+ 'runtime': '104分钟',
+ 'starring': '王梓/陶典/季冠霖/黄莺',
+ 'title': '精灵王座'}
+2017-09-08 23:54:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26844127/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26844127/>
+{'adaptors': '青岛崇',
+ 'country': ' 日本',
+ 'directors': '太田雅彦',
+ 'genre': '喜剧/动画',
+ 'rate': '7.6',
+ 'release_date': '2017-01-09(日本)',
+ 'runtime': '24分钟',
+ 'starring': '富田美优/大西沙织/大空直美/花泽香菜/水濑祈',
+ 'title': '珈百璃的堕落 ガヴリールドロップアウト'}
+2017-09-08 23:54:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26921827/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26921827/>
+{'adaptors': '',
+ 'country': ' 中国大陆',
+ 'directors': '李清舫',
+ 'genre': '喜剧/动画/家庭/冒险',
+ 'rate': '4.4',
+ 'release_date': '2017-01-13(中国大陆)',
+ 'runtime': '90分钟',
+ 'starring': '汤水雨/徐佳琦/杨默',
+ 'title': '大卫贝肯之倒霉特工熊'}
+2017-09-08 23:54:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26277361/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26277361/>
+{'adaptors': 'J·M·德马泰/厄尼·阿特巴克/杰里·西格尔/乔·舒斯特/鲍勃·凯恩/比尔·芬格/威廉·马斯顿/史提夫·比塞特/阿诺德·德雷克/杰克·科比/莱恩·韦恩/伯尼·莱特森/伽德纳·福克斯/尼尔·亚当斯/卡迈恩·因凡蒂诺/艾伦·摩尔/马文·沃夫曼/丹尼·奥尼尔/谢尔顿·梅尔',
+ 'country': ' 美国',
+ 'directors': '杰伊·欧力瓦',
+ 'genre': '动作/科幻/动画/惊悚/奇幻',
+ 'rate': '7.3',
+ 'release_date': '2017-01-24/2017-02-07(美国)',
+ 'runtime': '75分钟',
+ 'starring': '马特·瑞安/卡米拉·卢丁顿/杰森·奥玛拉/雷·蔡斯/恩里克·克兰东尼/罗杰·R.克劳斯/杰瑞米·戴维斯/罗莎里奥·道森/布莱恩·T·德莱尼/阿尔弗雷德·莫里纳/杰瑞·奥康奈尔/科琳·欧肖内希/杰弗里·文森特·帕里塞/劳拉·波斯特/弗莱德·塔他斯西奥/迪·布拉雷·贝克尔/JB·布兰科',
+ 'title': '黑暗正义联盟 Justice League Dark'}
+2017-09-08 23:54:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26831711/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26831711/>
+{'adaptors': '崔铁志/万秦/徐芸',
+ 'country': ' 中国大陆',
+ 'directors': '林永长/林汇达/丁亮',
+ 'genre': '动画/儿童',
+ 'rate': '6.4',
+ 'release_date': '2017-01-28(中国大陆)',
+ 'runtime': '89分钟',
+ 'starring': '尚雯婕/鲍春来/孙建弘/曾舜晞',
+ 'title': '熊出没·奇幻空间'}
+2017-09-08 23:54:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26766397/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26766397/>
+{'adaptors': '邓伟锋',
+ 'country': ' 中国大陆',
+ 'directors': '邓伟锋',
+ 'genre': '喜剧/动画/奇幻/冒险',
+ 'rate': '5.0',
+ 'release_date': '2017-02-05(中国大陆)',
+ 'runtime': '85分钟',
+ 'starring': '山新/姚雷/郭盛/李姗姗/张圣/邓伟锋/宋明/陈喆',
+ 'title': '萤火奇兵'}
+2017-09-08 23:54:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26839466/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26839466/>
+{'adaptors': '高桥敦史/藤子·F·不二雄',
+ 'country': ' 日本',
+ 'directors': '高桥敦史',
+ 'genre': '动画/冒险',
+ 'rate': '6.6',
+ 'release_date': '2017-05-30(中国大陆)/2017-03-04(日本)',
+ 'runtime': '101分钟',
+ 'starring': '水田山葵/大原惠美/嘉数由美/木村昴/关智一/藤本千秋/钉宫理惠/金井美香/三石琴乃',
+ 'title': '哆啦A梦：大雄的南极冰冰凉大冒险 ドラえもん のび太の南極カチコチ大冒険'}
+2017-09-08 23:54:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25907029/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25907029/>
+{'adaptors': '迈克尔·麦库勒斯/玛拉·弗雷齐',
+ 'country': ' 美国',
+ 'directors': '汤姆·麦格拉思',
+ 'genre': '喜剧/动画',
+ 'rate': '7.3',
+ 'release_date': '2017-03-12(迈阿密电影节)/2017-03-31(美国)',
+ 'runtime': '97分钟',
+ 'starring': '亚历克·鲍德温/迈尔斯·克里斯托弗·巴克什/吉米·坎摩尔/丽莎·库卓/史蒂夫·布西密/托比·马奎尔/詹姆斯·麦格拉思/康拉德·弗农/薇薇安·叶/小埃里克·贝尔/大卫·索伦/伊迪·米尔曼/詹姆斯·雷恩/沃尔特·道恩/朱尔斯·温特',
+ 'title': '宝贝老板 The Boss Baby'}
+2017-09-08 23:54:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/2024966/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/2024966/>
+{'adaptors': '厄尼·阿特巴克',
+ 'country': ' 美国',
+ 'directors': '刘山姆',
+ 'genre': '动作/动画',
+ 'rate': '6.6',
+ 'release_date': '2017-03-31(阿纳海姆-WonderCon)/2017-04-04/2017-04-18',
+ 'runtime': '84分钟',
+ 'starring': '斯图尔特·艾伦/杰克·T·奥斯汀/泰莎·法米加/肖恩·马希尔/克里斯蒂娜·里奇/布兰登·司徒/凯瑞·华格伦/米盖尔·弗尔/格雷格·亨利/玛丽亚·卡纳尔斯-巴雷拉/梅格·福斯特/克里斯平·弗里曼/大卫·卡耶/凯文·史密斯',
+ 'title': '少年泰坦：犹大契约 Teen Titans: The Judas Contract'}
+2017-09-08 23:54:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26788667/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26788667/>
+{'adaptors': '大仓崇裕/青山刚昌',
+ 'country': ' 日本',
+ 'directors': '静野孔文',
+ 'genre': '动画/悬疑',
+ 'rate': '6.7',
+ 'release_date': '2017-04-15(日本)',
+ 'runtime': '112分钟',
+ 'starring': '高山南/山崎和佳奈/小山力也/堀川亮/宫村优子/绪方贤一/岩居由希子/高木渉/大谷育江/林原惠美/宫川大辅/吉冈里帆/雪野五月',
+ 'title': '名侦探柯南：唐红的恋歌 名探偵コナン から紅の恋歌'}
+2017-09-08 23:54:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26670584/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26670584/>
+{'adaptors': '贰瓶勉/村井贞之',
+ 'country': ' 日本',
+ 'directors': '濑下宽之',
+ 'genre': '科幻/动画',
+ 'rate': '7.6',
+ 'release_date': '2017-05-20(日本)',
+ 'runtime': '106分钟',
+ 'starring': '樱井孝宏/花泽香菜/雨宫天/山路和弘/宫野真守/洲崎绫/岛崎信长/梶裕贵/丰崎爱生/早见沙织',
+ 'title': 'BLAME!'}
+2017-09-08 23:54:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26287884/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26287884/>
+{'adaptors': '马克·海姆斯/克里斯·巴特勒',
+ 'country': ' 美国',
+ 'directors': '特拉维斯·奈特',
+ 'genre': '动画/奇幻/冒险',
+ 'rate': '7.4',
+ 'release_date': '2017-01-13(中国大陆)/2016-08-19(美国)',
+ 'runtime': '102分钟',
+ 'starring': '查理兹·塞隆/马修·麦康纳/拉尔夫·费因斯/阿特·帕金森/鲁妮·玛拉/武井乔治/田川洋行/野路美苗/布伦达·瓦卡罗/肯·竹本',
+ 'title': '魔弦传说 Kubo and the Two Strings'}
+2017-09-08 23:54:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25889476/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25889476/>
+{'adaptors': '谢立文',
+ 'country': ' 中国大陆 / 香港',
+ 'directors': '谢立文',
+ 'genre': '喜剧/动画/冒险',
+ 'rate': '6.2',
+ 'release_date': '2016-09-15(中国大陆)',
+ 'runtime': '90分钟',
+ 'starring': '金刚/大汪/张正中/彭博/孙小妞',
+ 'title': '麦兜·饭宝奇兵'}
+2017-09-08 23:54:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26264454/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26264454/>
+{'adaptors': '吉田玲子/大今良时',
+ 'country': ' 日本',
+ 'directors': '山田尚子',
+ 'genre': '剧情/爱情/动画',
+ 'rate': '7.3',
+ 'release_date': '2017-09-08(中国大陆)/2016-09-17(日本)',
+ 'runtime': '129分钟',
+ 'starring': '入野自由/早见沙织/松冈茉优/悠木碧/小野贤章/金子有希/石川由依/潘惠美/丰永利行',
+ 'title': '声之形 聲の形'}
+2017-09-08 23:54:39 [scrapy.extensions.logstats] INFO: Crawled 47 pages (at 47 pages/min), scraped 29 items (at 29 items/min)
+2017-09-08 23:54:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26374205/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26374205/>
+{'adaptors': '尼古拉斯·斯托勒',
+ 'country': ' 美国',
+ 'directors': '尼古拉斯·斯托勒/道格·斯威特兰德',
+ 'genre': '喜剧/动画/奇幻/冒险',
+ 'rate': '7.5',
+ 'release_date': '2016-09-23(中国大陆/美国)',
+ 'runtime': '87分钟',
+ 'starring': '安迪·萨姆伯格/凯蒂·克朗/凯尔希·格兰莫/詹妮弗·安妮斯顿/泰·布利尔/安东·斯塔克曼/科甘-迈克尔·凯/乔丹·皮尔/丹尼·特雷霍/史蒂芬·克雷默·格利克曼/克里斯托弗·尼古拉斯·史密斯/奥卡菲娜/伊克·巴里霍尔兹/乔玛·塔科内/阿曼达·隆德',
+ 'title': '逗鸟外传：萌宝满天飞 Storks'}
+2017-09-08 23:54:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26737505/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26737505/>
+{'adaptors': '柿原优子',
+ 'country': ' 日本',
+ 'directors': '元永庆太郎',
+ 'genre': '科幻/动画/冒险',
+ 'rate': '7.6',
+ 'release_date': '2016-09-24',
+ 'runtime': '101分钟',
+ 'starring': '田村睦心/樱井孝宏/荒川美穗/森下由树子/花江夏树/三森铃子/细谷佳正/吉田仁美/池田纯矢/榎木淳弥/市道真央/坂本千夏/山口真弓/重松花鸟/山田木野子/竹内顺子/松本美和/德光由禾',
+ 'title': '数码宝贝大冒险tri. 第3章：告白 デジモンアドベンチャー tri. 第3章 告白'}
+2017-09-08 23:54:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26354336/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26354336/>
+{'adaptors': '郭敬明',
+ 'country': ' 中国大陆',
+ 'directors': '郭敬明',
+ 'genre': '动画/奇幻',
+ 'rate': '3.8',
+ 'release_date': '2016-09-29(中国大陆)',
+ 'runtime': '121分钟',
+ 'starring': '范冰冰/吴亦凡/陈学冬/陈伟霆/郭采洁/杨幂/林允/严屹宽/李治廷/王源/汪铎/郭敬明',
+ 'title': '爵迹'}
+2017-09-08 23:54:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26765310/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26765310/>
+{'adaptors': '郑国伟',
+ 'country': ' 中国大陆',
+ 'directors': '郑国伟',
+ 'genre': '动作/动画/奇幻/冒险',
+ 'rate': '3.7',
+ 'release_date': '2016-10-02(中国大陆)',
+ 'runtime': '86分钟',
+ 'starring': '赖艺/王畅唱/曲澔濬/于小凌/戴鑫龙/刘俐嘉/贾如/张子夜/王永峰/王鹏轩',
+ 'title': '铠甲勇士捕王'}
+2017-09-08 23:54:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26858290/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26858290/>
+{'adaptors': '詹姆斯·塔克/迈克尔·杰勒尼克/威廉·多兹尔/鲍勃·凯恩/比尔·芬格/艾德蒙·汉弥顿/杰瑞·罗宾逊/谢尔顿·莫道夫/迪克·史邦',
+ 'country': ' 美国',
+ 'directors': '里克·莫拉莱斯',
+ 'genre': '喜剧/动作/动画/冒险',
+ 'rate': '6.3',
+ 'release_date': '2016-10-06(纽约动漫展)/2016-10-11(美国)',
+ 'runtime': '78分钟',
+ 'starring': '亚当·威斯特/波特·瓦德/朱莉·纽玛/杰夫·伯格曼/赛丽娜·欧文/托马斯·列农/威廉·赛莱耶/琳恩·玛丽·斯图尔特/吉姆·瓦德/斯蒂文·韦伯/瓦利·维吉尔特',
+ 'title': '蝙蝠侠：披风斗士归来 Batman: Return of the Caped Crusaders'}
+2017-09-08 23:54:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26666177/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26666177/>
+{'adaptors': '黑岩勉',
+ 'country': ' 日本',
+ 'directors': '佐藤敬一/川村泰',
+ 'genre': '动作/动画',
+ 'rate': '7.8',
+ 'release_date': '2016-10-14(日本)',
+ 'runtime': '96分钟',
+ 'starring': '小野大辅/市道真央/郭智博/早见沙织/池田秀一/津嘉山正种/小野坂昌也/津田健次郎/小川辉晃/吉田尚纪/梶裕贵',
+ 'title': '杀戮都市：O GANTZ:O'}
+2017-09-08 23:54:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/7065238/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/7065238/>
+{'adaptors': '乔纳森·阿贝尔/格伦·伯杰/埃丽卡·里维诺亚/托马斯·丹姆',
+ 'country': ' 美国',
+ 'directors': '迈克·米歇尔/沃尔特·道恩',
+ 'genre': '动画/歌舞/奇幻/冒险',
+ 'rate': '7.2',
+ 'release_date': '2016-10-28(中国大陆)/2016-11-04(美国)',
+ 'runtime': '93分钟',
+ 'starring': '安娜·肯德里克/贾斯汀·汀布莱克/佐伊·丹斯切尔/克里斯托夫·梅兹-普莱瑟/克里斯汀·芭伦斯基/拉塞尔·布兰德/格温·斯蒂芬妮/约翰·克立斯/詹姆斯·柯登/杰弗里·塔伯/罗恩·芬奇斯/艾诺·贾沃/卡洛琳·耶尔特/昆瑙·内亚/奎文赞妮·瓦利斯/沃尔特·道恩/瑞斯·达比/瑞奇·狄龙/葛洛泽尔·格林/康达尔·约翰逊/格雷斯·赫尔比希/柯提斯·史东/迈克·米歇尔',
+ 'title': '魔发精灵 Trolls'}
+2017-09-08 23:54:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/11611021/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/11611021/>
+{'adaptors': '片渊须直/河野史代',
+ 'country': ' 日本',
+ 'directors': '片渊须直',
+ 'genre': '剧情/动画/战争',
+ 'rate': '7.6',
+ 'release_date': '2016-11-12(日本)',
+ 'runtime': '126分钟',
+ 'starring': '能年玲奈/细谷佳正/尾身美词/稻叶菜月/牛山茂/新谷真弓/小野大辅/岩井七世/潘惠美/京田尚子/涩谷天外/小山刚志/津田真澄',
+ 'title': '在这世界的角落 この世界の片隅に'}
+2017-09-08 23:54:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25793398/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25793398/>
+{'adaptors': '罗恩·克莱蒙兹/约翰·马斯克/塔伊加·维迪提/杰拉德·布什',
+ 'country': ' 美国',
+ 'directors': '罗恩·克莱蒙兹/约翰·马斯克',
+ 'genre': '喜剧/动画/歌舞/家庭/奇幻/冒险',
+ 'rate': '7.6',
+ 'release_date': '2016-11-25(中国大陆)/2016-11-23(美国)',
+ 'runtime': '107分钟',
+ 'starring': '奥丽伊·卡瓦洛/道恩·强森/艾伦·图代克/杰梅奈·克莱门特/尼可·斯彻金格/特穆拉·莫里森/瑞切尔·豪斯/奥斯卡·凯特利/特洛伊·波拉马鲁',
+ 'title': '海洋奇缘 Moana'}
+2017-09-08 23:54:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26382767/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26382767/>
+{'adaptors': '卡罗尔·诺布尔/艾瑞克·莎莫/劳伦特·泽图恩',
+ 'country': ' 法国 / 加拿大',
+ 'directors': '艾瑞克·莎莫/艾瑞克·韦林',
+ 'genre': '喜剧/动画/歌舞/冒险',
+ 'rate': '6.5',
+ 'release_date': '2017-02-01(中国大陆)/2016-12-14(法国)',
+ 'runtime': '89分钟',
+ 'starring': '艾丽·范宁/戴恩·德哈恩/卡莉·蕾·杰普森/麦迪·齐格勒/特伦斯·斯卡梅尔/塔米尔·卡皮利安/朱莉·卡纳/乔·谢里丹/伊拉娜·盖尔/肖莎娜·斯珀林/杰米·沃森/布朗温·曼特尔/梅尔·布鲁克斯/里卡多·埃尔曼德里·桑切斯/凯特·麦克金农',
+ 'title': '了不起的菲丽西 Ballerina'}
+2017-09-08 23:54:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26912427/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E7%94%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26912427/>
+{'adaptors': '王晓莉/陈业峰',
+ 'country': ' 中国大陆',
+ 'directors': '陆锦明/钟裕',
+ 'genre': '喜剧/动画/奇幻',
+ 'rate': '4.7',
+ 'release_date': '2017-01-07(中国大陆)',
+ 'runtime': '91分钟',
+ 'starring': '易烊千玺/陈轶/张子琨/戎妍/庄承松/李泰承/刘青阳/陈志荣',
+ 'title': '猪猪侠之英雄猪少年'}
+2017-09-08 23:54:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/27018296/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%9C%80%E6%96%B0&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/27018296/>
+{'adaptors': '洪尚秀',
+ 'country': ' 韩国',
+ 'directors': '洪尚秀',
+ 'genre': '剧情/爱情',
+ 'rate': '7.5',
+ 'release_date': '2017-05-22(戛纳电影节)/2017-07-06(韩国)',
+ 'runtime': '92分钟',
+ 'starring': '金敏喜/权海骁/赵允熙/金玺碧/纪柱峰',
+ 'title': '之后 그 후'}
+2017-09-08 23:54:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10754814/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%9C%80%E6%96%B0&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10754814/>
+{'adaptors': '马克·弗里德曼/贾斯廷·斯坦利',
+ 'country': ' 美国',
+ 'directors': '布莱恩·古德曼',
+ 'genre': '惊悚',
+ 'rate': '6.0',
+ 'release_date': '2017-05-26(美国)',
+ 'runtime': '93分钟',
+ 'starring': '安东尼奥·班德拉斯/乔纳森·莱斯·梅耶斯/派珀·佩拉博/阿贝尔·费拉拉/尼古拉斯·阿隆/娜塔丽·拉布蒂·戈麦斯/亚历山德拉·克利姆/娇娅·利巴尔多尼/兰德尔·保罗/凯蒂·麦戈文/提摩西·马丁',
+ 'title': '黑蝴蝶 Black Butterfly'}
+2017-09-08 23:54:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26800974/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%9C%80%E6%96%B0&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26800974/>
+{'adaptors': '申英度',
+ 'country': ' 韩国',
+ 'directors': '郑胤澈',
+ 'genre': '剧情/历史/战争/古装',
+ 'rate': '6.3',
+ 'release_date': '2017-05-31(韩国)',
+ 'runtime': '130分钟',
+ 'starring': '李政宰/吕珍九/金武烈/裴秀彬/曹东因/李絮/玄奉植/金明坤 /南成俊/朴海俊/朴元尚',
+ 'title': '代立军 대립군'}
+2017-09-08 23:54:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26757945/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%9C%80%E6%96%B0&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26757945/>
+{'adaptors': '赵善浩',
+ 'country': ' 韩国',
+ 'directors': '赵善浩',
+ 'genre': '剧情/悬疑/惊悚',
+ 'rate': '7.1',
+ 'release_date': '2017-06-15(韩国)',
+ 'runtime': '90分钟',
+ 'starring': '金明民/卞耀汉/申惠善/赵恩恒/刘在明',
+ 'title': '一天 하루'}
+2017-09-08 23:54:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26548617/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%9C%80%E6%96%B0&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:54:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26548617/>
+{'adaptors': '马克·卡伦/罗布·卡伦',
+ 'country': ' 美国',
+ 'directors': '马克·卡伦',
+ 'genre': '喜剧/动作/惊悚',
+ 'rate': '5.5',
+ 'release_date': '2017-06-16(美国)',
+ 'runtime': '94分钟',
+ 'starring': '布鲁斯·威利斯/约翰·古德曼/杰森·莫玛/艾米丽 '
+             '罗宾森/杰西卡·戈麦斯/卡莱蒂·威廉姆斯/迈尔斯·哈姆帕斯/法米克·詹森/托马斯·米德蒂奇/莫里斯·孔特/斯黛芬妮·西格曼/阿德里安·马丁斯/肯·戴维蒂安/维克托·奥尔蒂斯/亚当·戈德堡',
+ 'title': '重装上阵 Once Upon a Time in Venice'}
+2017-09-08 23:54:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10568385/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:54:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10568385/>
+{'adaptors': '约瑟·里韦拉/克莱格·鲍登/马克·艾伦/菲利普·迈克尔·托马斯/赫克托·托伯',
+ 'country': ' 美国 / 智利',
+ 'directors': '派翠西亚·里根',
+ 'genre': '剧情/传记/历史',
+ 'rate': '7.3',
+ 'release_date': '2016-03-04(中国大陆)/2015-08-06(智利)',
+ 'runtime': '127分钟(智利)',
+ 'starring': '安东尼奥·班德拉斯/朱丽叶·比诺什/罗德里戈·桑托罗/娜奥米·斯科特/科特·德·巴勃罗/卢·戴蒙德·菲利普斯/詹姆斯·布洛林/加布里埃尔·伯恩/鲍勃·冈顿/凯特·德尔·卡斯蒂洛/贾克波·瓦格斯/马里奥·卡萨斯/艾德里安娜·巴拉扎/奥斯卡·努内斯/豪尔赫·迪亚斯/特诺切·韦尔塔/宝琳娜·加西亚/费德里科·路皮/胡安·巴勃罗·萨拉梅利亚',
+ 'title': '地心营救 The 33'}
+2017-09-08 23:55:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25853727/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25853727/>
+{'adaptors': '林超贤/林逢/侯颖桁',
+ 'country': ' 香港 / 中国大陆',
+ 'directors': '林超贤',
+ 'genre': '剧情/运动',
+ 'rate': '7.2',
+ 'release_date': '2015-08-07(中国大陆)',
+ 'runtime': '126分钟',
+ 'starring': '彭于晏/窦骁/崔始源/王珞丹/陈家乐/欧阳娜娜/连凯',
+ 'title': '破风 破風'}
+2017-09-08 23:55:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26282448/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26282448/>
+{'adaptors': '岸本齐史/小太刀右京',
+ 'country': ' 日本',
+ 'directors': '山下宏幸',
+ 'genre': '动作/动画/冒险',
+ 'rate': '8.4',
+ 'release_date': '2016-02-18(中国大陆)/2015-08-07(日本)',
+ 'runtime': '96分钟',
+ 'starring': '三瓶由布子/菊池心/竹内顺子/杉山纪彰/阿部敦/小野贤章/木岛隆一/早见沙织/浪川大辅',
+ 'title': '火影忍者剧场版：博人传 BORUTO -NARUTO THE MOVIE-'}
+2017-09-08 23:55:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26337866/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26337866/>
+{'adaptors': '毕赣',
+ 'country': ' 中国大陆',
+ 'directors': '毕赣',
+ 'genre': '剧情',
+ 'rate': '7.7',
+ 'release_date': '2016-07-15(中国大陆)/2015-08-11(洛迦诺电影节)',
+ 'runtime': '110分钟',
+ 'starring': '陈永忠/谢理循/余世学/郭月/赵达清/罗飞扬/曾帅/秦光黔/刘林艳/杨卓华/杨江船/欧孟军/吴得水/宋大成/廖冬凯',
+ 'title': '路边野餐'}
+2017-09-08 23:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26310114/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26310114/>
+{'adaptors': '安国真',
+ 'country': ' 韩国',
+ 'directors': '安国真',
+ 'genre': '剧情',
+ 'rate': '7.5',
+ 'release_date': '2015-08-13(韩国)',
+ 'runtime': '90分钟',
+ 'starring': '李贞贤/明桂南/吴光禄/徐永嬅',
+ 'title': '诚实国度的爱丽丝 성실한 나라의 앨리스'}
+2017-09-08 23:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26297388/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26297388/>
+{'adaptors': '洪尚秀',
+ 'country': ' 韩国',
+ 'directors': '洪尚秀',
+ 'genre': '剧情',
+ 'rate': '7.4',
+ 'release_date': '2015-08-13(洛迦诺电影节)/2015-09-24(韩国)',
+ 'runtime': '121分钟',
+ 'starring': '郑在咏/金敏喜/尹汝贞/纪柱峰/崔华静/刘俊相/徐永嬅/高雅星',
+ 'title': '这时对那时错 지금은맞고그때는틀리다'}
+2017-09-08 23:55:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26289144/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3608742/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26289144/>
+{'adaptors': '袁媛/张维重',
+ 'country': ' 中国大陆',
+ 'directors': '韩延',
+ 'genre': '喜剧/爱情',
+ 'rate': '7.4',
+ 'release_date': '2015-08-13(中国大陆)',
+ 'runtime': '128分钟',
+ 'starring': '白百何/吴彦祖/李媛/刘芮麟/程伊/刘莉莉/李建义/张子萱/沈腾',
+ 'title': '滚蛋吧！肿瘤君'}
+2017-09-08 23:55:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3608742/>
+{'adaptors': '乔纳森·赫尔曼/S·雷·利萨维治/艾伦·温库/安德丽亚·贝尔洛夫',
+ 'country': ' 美国',
+ 'directors': 'F·加里·格雷',
+ 'genre': '剧情/音乐/传记',
+ 'rate': '7.6',
+ 'release_date': '2015-08-14(美国)',
+ 'runtime': '147分钟',
+ 'starring': '科里·霍金斯/杰森·米切尔/小奥谢拉·杰克逊/阿尔迪斯·霍吉/保罗·吉亚玛提/勒凯斯·斯坦菲尔德/小尼尔·布朗/小马龙·耶茨/马修·博兰/R·马科斯·泰勒/卡拉·帕特森/亚历山德拉·希普/科瑞·雷诺兹',
+ 'title': '冲出康普顿 Straight Outta Compton'}
+2017-09-08 23:55:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/6845667/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/6845667/>
+{'adaptors': '盖·里奇/莱昂内尔·威格拉姆/杰夫·克利曼/大卫·威尔森/萨姆·罗尔夫',
+ 'country': ' 美国 / 英国',
+ 'directors': '盖·里奇',
+ 'genre': '喜剧/动作/冒险',
+ 'rate': '8.0',
+ 'release_date': '2015-08-14(美国/英国)',
+ 'runtime': '116分钟',
+ 'starring': '亨利·卡维尔/艾米·汉莫/艾丽西亚·维坎德/西尔维斯特·格罗特/休·格兰特/杰瑞德·哈里斯/伊丽莎白·德比茨基/克里斯蒂安·贝克尔/豪尔赫·莱昂·马丁内斯/卢卡·卡尔瓦尼/大卫·贝克汉姆/丹尼尔·韦斯特伍德',
+ 'title': '秘密特工 The Man from U.N.C.L.E.'}
+2017-09-08 23:55:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26366465/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26366465/>
+{'adaptors': '曾咏婷',
+ 'country': ' 台湾',
+ 'directors': '陈玉珊',
+ 'genre': '喜剧/爱情',
+ 'rate': '7.8',
+ 'release_date': '2015-11-19(中国大陆)/2015-08-15(台湾)',
+ 'runtime': '134分钟',
+ 'starring': '宋芸桦/王大陆/李玉玺/简廷芮/刘德华/陈乔恩/言承旭/曲家瑞/屈中恒/钟欣凌/许杰辉/蔡颐榛/郭文颐/石知田/那维勋/林鹤轩/陈彦允/张立东/郑茵声/李绍祥',
+ 'title': '我的少女时代 我的少女時代'}
+2017-09-08 23:55:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26235839/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26235839/>
+{'adaptors': 'Seon-jeong Kim/Jeong-ye Park/卢熙京',
+ 'country': ' 韩国',
+ 'directors': '白宗烈',
+ 'genre': '剧情/爱情/奇幻',
+ 'rate': '7.5',
+ 'release_date': '2015-08-20(韩国)',
+ 'runtime': '127分钟',
+ 'starring': '韩孝周/金大明/都枝寒/朴信惠/李凡秀/朴叙俊/金相浩/千禹熙/赵达焕/李阵郁/徐康俊/李栋旭/高雅星/金柱赫/柳演锡/上野树里/文淑/申东美/李在浚/李玹雨/金熙元',
+ 'title': '内在美 뷰티 인사이드'}
+2017-09-08 23:55:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10792322/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10792322/>
+{'adaptors': '约翰·埃里克·道达尔/德鲁·道达尔',
+ 'country': ' 美国',
+ 'directors': '约翰·埃里克·道达尔',
+ 'genre': '动作/惊悚',
+ 'rate': '7.2',
+ 'release_date': '2015-08-26(美国)',
+ 'runtime': '103分钟',
+ 'starring': '欧文·威尔逊/蕾克·贝尔/斯特林·杰里斯/皮尔斯·布鲁斯南/Thanawut Kasro/Chatchawai '
+             'Kamonsakpitak/Sahajak Boonthanakit/Tanapol Chuksrida/Nophand '
+             'Boonyai/Kanarpat Phintiang',
+ 'title': '无处可逃 No Escape'}
+2017-09-08 23:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/22265299/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/22265299/>
+{'adaptors': '威廉姆·尼克尔森/西蒙·博福伊',
+ 'country': ' 英国 / 美国 / 冰岛',
+ 'directors': '巴塔萨·科马库',
+ 'genre': '剧情/传记/冒险',
+ 'rate': '7.4',
+ 'release_date': '2015-11-03(中国大陆)/2015-09-02(威尼斯电影节)/2015-09-25(美国)',
+ 'runtime': '120分钟',
+ 'starring': '杰森·克拉科/乔什·布洛林/约翰·浩克斯/罗宾·怀特/艾米丽·沃森/迈克尔·凯利/凯拉·奈特莉/萨姆·沃辛顿/杰克·吉伦哈尔/克莱夫·斯坦登/伊丽莎白·德比茨基/米娅·高斯/马丁·亨德森/凡妮莎·柯比/汤姆·古德曼-希尔/森尚子',
+ 'title': '绝命海拔 Everest'}
+2017-09-08 23:55:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3445457/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3445457/>
+{'adaptors': '凯瑞·福永/祖丁马·伊维拉',
+ 'country': ' 美国',
+ 'directors': '凯瑞·福永',
+ 'genre': '剧情/战争',
+ 'rate': '7.8',
+ 'release_date': '2015-09-03(威尼斯电影节)/2015-10-16(美国)',
+ 'runtime': '137分钟',
+ 'starring': '伊德里斯·艾尔巴/亚伯拉罕·阿塔哈/理查德·皮泼/安德鲁·阿道特/弗朗西斯·温迪/约翰·阿瑟/格蕾丝·诺提/埃马瑞·布朗/娜娜·门沙/大卫·唐通/布莱恩·安杰斯/安德鲁·爱德华',
+ 'title': '无境之兽 Beasts of No Nation'}
+2017-09-08 23:55:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25954475/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25954475/>
+{'adaptors': '乔希·辛格/汤姆·麦卡锡',
+ 'country': ' 美国 / 加拿大',
+ 'directors': '汤姆·麦卡锡',
+ 'genre': '剧情/传记',
+ 'rate': '8.8',
+ 'release_date': '2015-09-03(威尼斯电影节)/2015-11-25(美国)',
+ 'runtime': '128分钟',
+ 'starring': '马克·鲁弗洛/迈克尔·基顿/瑞秋·麦克亚当斯/列维·施瑞博尔/约翰·斯拉特里/布莱恩·达西·詹姆斯/斯坦利·图齐/比利·克鲁德普/保罗·吉尔福伊尔/杰米·谢尔丹/兰·卡琉/尼尔·哈夫/迈克尔·西里尔·克赖顿/迈克尔·康特里曼',
+ 'title': '聚焦 Spotlight'}
+2017-09-08 23:55:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25821498/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25821498/>
+{'adaptors': '艾比·摩根',
+ 'country': ' 英国',
+ 'directors': '莎拉·加芙隆',
+ 'genre': '剧情/传记/历史',
+ 'rate': '8.1',
+ 'release_date': '2015-09-04(特柳赖德电影节)/2015-10-12(英国)',
+ 'runtime': '106分钟',
+ 'starring': '凯瑞·穆里根/海伦娜·伯翰·卡特/布莱丹·格里森/安-玛莉·杜芙/本·卫肖/梅丽尔·斯特里普/萝玛拉·嘉瑞/杰夫·贝尔/萨缪尔·韦斯特/摩根·华金斯/娜塔莉·普莱斯/玛瑞沃拉·嘉沃斯卡/理查德·班克斯/李·尼古拉斯·哈里斯',
+ 'title': '妇女参政论者 Suffragette'}
+2017-09-08 23:55:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25724855/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25724855/>
+{'adaptors': '艾玛·多诺霍',
+ 'country': ' 爱尔兰 / 加拿大',
+ 'directors': '伦尼·阿伯拉罕森',
+ 'genre': '剧情/家庭',
+ 'rate': '8.8',
+ 'release_date': '2015-09-04(特柳赖德电影节)/2016-01-15(爱尔兰)',
+ 'runtime': '118分钟',
+ 'starring': '布丽·拉尔森/雅各布·特伦布莱/琼·艾伦/肖恩·布里吉格斯/威廉姆·H·梅西/梅根·帕克/阿曼达·布鲁盖尔/卡斯·安瓦尔/乔·平格/温迪·古逊/兰道尔·爱德华/杰克·富尔顿/汤姆·麦卡穆斯',
+ 'title': '房间 Room'}
+2017-09-08 23:55:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/3071604/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/3071604/>
+{'adaptors': '露辛达·考克森/大卫·艾伯豪夫',
+ 'country': ' 英国 / 美国 / 比利时 / 丹麦 / 德国',
+ 'directors': '汤姆·霍珀',
+ 'genre': '剧情/爱情/传记',
+ 'rate': '8.1',
+ 'release_date': '2015-09-05(威尼斯电影节)/2016-01-01(英国)',
+ 'runtime': '119分钟',
+ 'starring': '埃迪·雷德梅恩/艾丽西亚·维坎德/本·卫肖/塞巴斯蒂安·科赫/艾梅柏·希尔德/马提亚斯·修奈尔/尼古拉斯·伍德森/皮普·托伦斯/克劳斯·布埃/埃默拉尔德·芬内尔/理查德·迪克森',
+ 'title': '丹麦女孩 The Danish Girl'}
+2017-09-08 23:55:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26586806/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26586806/>
+{'adaptors': '万玛才旦',
+ 'country': ' 中国大陆',
+ 'directors': '万玛才旦',
+ 'genre': '剧情',
+ 'rate': '7.7',
+ 'release_date': '2016-12-09(中国大陆)/2015-09-05(威尼斯电影节)',
+ 'runtime': '123分钟(公映版)',
+ 'starring': '西德尼玛/杨秀措',
+ 'title': '塔洛'}
+2017-09-08 23:55:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/23788440/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/23788440/>
+{'adaptors': '黄英/梁礼彦',
+ 'country': ' 香港 / 中国大陆',
+ 'directors': '郑保瑞',
+ 'genre': '剧情/动作/犯罪',
+ 'rate': '7.3',
+ 'release_date': '2015-06-18(中国大陆)',
+ 'runtime': '120分钟',
+ 'starring': '吴京/托尼·贾/张晋/任达华/卢惠光/恭硕良/林嘉华/蔡瀚亿/艾威/姜皓文/张驰/寇占文/古天乐/袁嘉敏',
+ 'title': '杀破狼2 殺破狼2'}
+2017-09-08 23:55:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10533913/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10533913/>
+{'adaptors': '彼特·道格特/罗纳尔多·德尔·卡门/梅格·勒福夫/乔什·库雷/迈克尔·阿恩特/西蒙·里奇/鲍勃·彼德森/比尔·哈德尔/艾米·波勒',
+ 'country': ' 美国',
+ 'directors': '彼特·道格特/罗纳尔多·德尔·卡门',
+ 'genre': '喜剧/动画/冒险',
+ 'rate': '8.7',
+ 'release_date': '2015-10-06(中国大陆)/2015-06-19(美国)',
+ 'runtime': '95分钟',
+ 'starring': '艾米·波勒/菲利丝·史密斯/理查德·坎德/比尔·哈德尔/刘易斯·布莱克/敏迪·卡灵/凯特林·迪亚斯/戴安·琳恩/凯尔·麦克拉克伦/波拉·庞德斯通/鲍比·莫尼汉/宝拉·佩尔/大卫·戈尔兹/弗兰克·奥兹/乔什·库雷/弗利/约翰·拉岑贝格/卡洛斯·阿拉斯拉奇/皮特·萨加尔/拉什达·琼斯/罗里·艾伦/约翰·齐甘/雪莉·琳恩/拉瑞恩·纽曼/帕丽斯·冯·戴克',
+ 'title': '头脑特工队 Inside Out'}
+2017-09-08 23:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26425002/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26245360/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26425002/>
+{'adaptors': '升野英知',
+ 'country': ' 日本',
+ 'directors': '関和亮',
+ 'genre': '剧情/奇幻',
+ 'rate': '8.1',
+ 'release_date': '2015-06-23(日本)',
+ 'runtime': '68分钟',
+ 'starring': '竹内结子/真木阳子/水川麻美/片桐仁/升野英知',
+ 'title': '阴差阳错的女演员们 かもしれない女優たち'}
+2017-09-08 23:55:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26245360/>
+{'adaptors': '马克·布鲁蒙德/妮可·阿姆博斯特',
+ 'country': ' 德国',
+ 'directors': '马克·布鲁蒙德',
+ 'genre': '剧情',
+ 'rate': '8.4',
+ 'release_date': '2015-06-25(德国)/2015-06(上海国际电影节)',
+ 'runtime': '104分钟',
+ 'starring': '乔纳斯·伯格/路易斯·霍夫曼/杰拉德·亚历山大·海德/施特凡·格罗斯曼/马克思·雷迈特/乌尔里希·图库尔/安娜·布拉德-维尔纳/阿克西尔·普拉尔/乌韦·博姆/马古斯·克罗杰尔',
+ 'title': '感化院 Freistatt'}
+2017-09-08 23:55:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25746375/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25746375/>
+{'adaptors': '尔冬升',
+ 'country': ' 中国大陆 / 香港',
+ 'directors': '尔冬升',
+ 'genre': '剧情/喜剧',
+ 'rate': '7.2',
+ 'release_date': '2015-07-03(中国大陆)',
+ 'runtime': '134分钟',
+ 'starring': '万国鹏/王婷/沈凯/徐小琴/林晨/魏星/蒿怡帆/蒿怡菲/覃培军/王昭/张文斌/林俭/耿立树/张喜来/周鹏/寇骏/姜涛/袁咏仪/方中信/刘伟强/冯德伦/吴彦祖/尔冬升/麦兆辉/庄文强/方平/张静初/许鞍华/林更新/蒋梦婕/陆剑明',
+ 'title': '我是路人甲'}
+2017-09-08 23:55:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26352462/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26352462/>
+{'adaptors': '火火/谭广源/贺鑫',
+ 'country': ' 香港',
+ 'directors': '火火',
+ 'genre': '惊悚/犯罪',
+ 'rate': '7.4',
+ 'release_date': '2015-07-05(纽约亚洲电影节)/2016-04-14(香港)',
+ 'runtime': '93分钟',
+ 'starring': '郭伟亮/林雪/冯淬帆/曾国祥/姜皓文/马志威/卢惠光/崔碧珈/雷琛瑜/周祉君',
+ 'title': '老笠'}
+2017-09-08 23:55:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25753326/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25753326/>
+{'adaptors': '维杰耶德拉·普拉萨德/S·S·拉贾穆里/C·H·维杰·库马尔/阿贾·库马尔/马德汉·卡尔基/马努杰·芒塔希尔',
+ 'country': ' 印度',
+ 'directors': 'S·S·拉贾穆里',
+ 'genre': '剧情/动作/战争/奇幻/冒险',
+ 'rate': '7.2',
+ 'release_date': '2016-07-22(中国大陆)/2015-07-10(印度)',
+ 'runtime': '129分钟(中国大陆)',
+ 'starring': '帕拉巴斯/拉纳·达格巴提/特曼娜·芭蒂亚/拉姆亚·克里希南/安努舒卡·谢蒂/纳赛尔/挲塞亚拉杰/塔尼克拉·巴拉尼/苏迪普/罗希尼',
+ 'title': '巴霍巴利王(上)：开端 Baahubali: The Beginning'}
+2017-09-08 23:55:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/11624706/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/11624706/>
+{'adaptors': '布莱恩·林奇',
+ 'country': ' 美国',
+ 'directors': '凯尔·巴尔达/皮埃尔·科凡',
+ 'genre': '喜剧/动画',
+ 'rate': '7.3',
+ 'release_date': '2015-09-13(中国大陆)/2015-07-10(美国)',
+ 'runtime': '91分钟',
+ 'starring': '桑德拉·布洛克/乔恩·哈姆/迈克尔·基顿/艾莉森·珍妮/史蒂夫·库根/珍妮弗·桑德斯/杰弗里·拉什/史蒂夫·卡瑞尔/皮埃尔·科凡/凯蒂·米克松/迈克尔·贝亚蒂/真田广之/大卫·罗森鲍姆/亚历克斯·道丁/保罗·索恩利',
+ 'title': '小黄人大眼萌 Minions'}
+2017-09-08 23:55:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26277313/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26277313/>
+{'adaptors': '田晓鹏/刘虎/米粒/金冉/金成',
+ 'country': ' 中国大陆',
+ 'directors': '田晓鹏',
+ 'genre': '喜剧/动作/动画/奇幻',
+ 'rate': '8.2',
+ 'release_date': '2015-07-10(中国大陆)',
+ 'runtime': '89分钟',
+ 'starring': '张磊/林子杰/吴文伦/童自荣/刘九容/吴迪/刘北辰/赵乾景/周帅',
+ 'title': '西游记之大圣归来'}
+2017-09-08 23:55:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26280710/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26280710/>
+{'adaptors': '细田守',
+ 'country': ' 日本',
+ 'directors': '细田守',
+ 'genre': '动作/动画/奇幻/冒险',
+ 'rate': '7.6',
+ 'release_date': '2015-07-11(日本)/2016-03-04(美国)',
+ 'runtime': '119分钟',
+ 'starring': '役所广司/宫崎葵/染谷将太/广濑铃/山路和弘/宫野真守/山口胜平/长塚圭史/麻生久美子/黑木华/诸星堇/大野百花/津川雅彦/中川雅也/大泉洋',
+ 'title': '怪物之子 バケモノの子'}
+2017-09-08 23:55:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1972724/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1972724/>
+{'adaptors': 'Tim Talbott',
+ 'country': ' 美国',
+ 'directors': '凯尔·帕特里克·奥瓦内兹',
+ 'genre': '剧情/惊悚',
+ 'rate': '7.3',
+ 'release_date': '2015-07-17(美国)',
+ 'runtime': '122分钟',
+ 'starring': '埃兹拉·米勒/李起弘/奥莉薇·瑟尔比/比利·克鲁德普/迈克尔·安格拉诺/莫伊塞斯·阿里亚斯/泰伊·谢里丹/卡兰·麦克奥利菲/约翰尼·西蒙斯/尼可拉斯·博朗/杰克·基默/詹姆斯·弗兰切威勒/托马斯·曼/尼尔森·埃利斯/布莱特·达文',
+ 'title': '斯坦福监狱实验 The Stanford Prison Experiment'}
+2017-09-08 23:55:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1866473/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1866473/>
+{'adaptors': '斯坦·李/杰克·科比/拉里·利伯/埃德加·赖特/乔·考尼什/亚当·麦凯/保罗·路德',
+ 'country': ' 美国',
+ 'directors': '佩顿·里德',
+ 'genre': '动作/科幻/冒险',
+ 'rate': '7.6',
+ 'release_date': '2015-10-16(中国大陆)/2015-07-17(美国)',
+ 'runtime': '117分钟',
+ 'starring': '保罗·路德/迈克尔·道格拉斯/伊万杰琳·莉莉/寇瑞·斯托尔/迈克尔·佩纳/大卫·达斯马齐连/朱迪·格雷尔/鲍比·坎纳瓦尔/约翰·斯拉特里/伍德·哈里斯/T.I./海莉·阿特维尔/瓦内萨·罗斯/马丁·唐文/乔·克里斯特/艾比·莱德·弗特森/安东尼·麦凯/加勒特·莫里斯/尼尔·汉博格/鲁德·哈利特/斯坦·李/克里斯·埃文斯/塞巴斯蒂安·斯坦',
+ 'title': '蚁人 Ant-Man'}
+2017-09-08 23:55:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26393561/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26393561/>
+{'adaptors': '卡比尔·汗/维杰耶德拉·普拉萨德',
+ 'country': ' 印度',
+ 'directors': '卡比尔·汗',
+ 'genre': '剧情/喜剧/动作/爱情',
+ 'rate': '8.7',
+ 'release_date': '2015-07-17(印度)',
+ 'runtime': '159分钟',
+ 'starring': '萨尔曼·汗/哈莎莉·马洛特拉/卡琳娜·卡普尔/纳瓦祖丁·席迪圭/埃朗·哈斯米',
+ 'title': '小萝莉的猴神大叔 Bajrangi Bhaijaan'}
+2017-09-08 23:55:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25823132/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25823132/>
+{'adaptors': '崔东勋/李基哲',
+ 'country': ' 韩国',
+ 'directors': '崔东勋',
+ 'genre': '剧情/动作/历史/犯罪',
+ 'rate': '8.0',
+ 'release_date': '2015-09-17(中国大陆)/2015-07-22(韩国)',
+ 'runtime': '139分钟',
+ 'starring': '全智贤/李政宰/河正宇/吴达洙/赵震雄/李璟荣/崔德门/金义城/朴炳垠 /陈庆/金海淑/曹承佑/河知元',
+ 'title': '暗杀 암살'}
+2017-09-08 23:55:39 [scrapy.extensions.logstats] INFO: Crawled 96 pages (at 49 pages/min), scraped 78 items (at 49 items/min)
+2017-09-08 23:55:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/5446197/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/5446197/>
+{'adaptors': '科特·萨特',
+ 'country': ' 美国 / 中国大陆',
+ 'directors': '安东尼·福奎阿',
+ 'genre': '剧情/动作/运动',
+ 'rate': '7.2',
+ 'release_date': '2016-09-02(中国大陆)/2015-07-24(美国)',
+ 'runtime': '123分钟',
+ 'starring': '杰克·吉伦哈尔/福里斯特·惠特克/瑞秋·麦克亚当斯/乌娜·劳伦斯/50分/司盖兰·布鲁克斯/娜奥米·哈里斯/维克托·奥尔蒂斯/博·纳普/米格尔·戈麦斯',
+ 'title': '铁拳 Southpaw'}
+2017-09-08 23:55:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/4075568/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/4075568/>
+{'adaptors': '乔纳森·M·戈尔茨坦/约翰·弗朗西斯·戴利',
+ 'country': ' 美国',
+ 'directors': '乔纳森·M·戈尔茨坦/约翰·弗朗西斯·戴利',
+ 'genre': '喜剧/家庭/冒险',
+ 'rate': '7.1',
+ 'release_date': '2015-07-29(美国)',
+ 'runtime': '99分钟',
+ 'starring': '艾德·赫尔姆斯/克里斯蒂娜·艾伯盖特/莱斯利·曼恩/比佛莉·德安姬罗/切维·切斯/克里斯·海姆斯沃斯/伊丽莎白·吉莱丝/斯凯勒·吉桑多/尼克·克罗尔/查理·戴/科甘-迈克尔·凯/凯特琳·奥尔森/迈克尔·佩纳/雷吉娜·赫尔/山姆·莱文',
+ 'title': '假期历险记 Vacation'}
+2017-09-08 23:55:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25821461/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25821461/>
+{'adaptors': '唐纳德·马格利斯/大卫·利普斯基',
+ 'country': ' 美国',
+ 'directors': '詹姆斯·庞索特',
+ 'genre': '剧情',
+ 'rate': '7.8',
+ 'release_date': '2015-07-31(美国)/2015-11-12(巴西)',
+ 'runtime': '106分钟',
+ 'starring': '杰森·席格尔/杰西·艾森伯格/安娜·克鲁姆斯基/麦米·古默/琼·库萨克/朗·里维斯顿/米奇·萨姆纳/琳赛·伊丽莎白',
+ 'title': '旅行终点 The End of the Tour'}
+2017-09-08 23:55:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26419637/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26419637/>
+{'adaptors': '乌皮德拉·塞德海耶',
+ 'country': ' 印度',
+ 'directors': '尼西卡特·卡马特',
+ 'genre': '剧情/悬疑/犯罪',
+ 'rate': '8.2',
+ 'release_date': '2015-07-31(印度)',
+ 'runtime': '163分钟',
+ 'starring': '阿贾耶·德乌干/塔布/施芮娅·萨兰/拉贾特·卡普尔/伊西塔·杜塔/莫伦诺·贾达夫/皮拉桑纳·凯特卡尔/尤盖莎·索南/帕拉斯莫什·帕拉布',
+ 'title': '误杀瞒天记 Drishyam'}
+2017-09-08 23:55:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10727641/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%BB%8F%E5%85%B8&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10727641/>
+{'adaptors': '克里斯托弗·麦奎里/德鲁·皮尔斯/布鲁斯·盖勒',
+ 'country': ' 美国 / 香港 / 中国大陆',
+ 'directors': '克里斯托弗·麦奎里',
+ 'genre': '动作/惊悚/冒险',
+ 'rate': '7.7',
+ 'release_date': '2015-09-08(中国大陆)/2015-07-31(美国)',
+ 'runtime': '131分钟',
+ 'starring': '汤姆·克鲁斯/杰瑞米·雷纳/西蒙·佩吉/丽贝卡·弗格森/文·瑞姆斯/西恩·哈里斯/西蒙·迈克伯尼/张静初/汤姆·霍兰德/延斯·赫尔腾/亚历克·鲍德温/亚历克·乌特戈夫/赫敏·科菲尔德/阿美莉嘉·奥利沃/拉斯科·阿特金斯/肖恩·克罗宁/明格斯·约翰斯顿',
+ 'title': '碟中谍5：神秘国度 Mission: Impossible - Rogue Nation'}
+2017-09-08 23:55:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26876342/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8F%AF%E6%92%AD%E6%94%BE&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26876342/>
+{'adaptors': '深见真/乔·麦克林',
+ 'country': ' 日本',
+ 'directors': '辻本贵则',
+ 'genre': '动作/动画/恐怖/冒险',
+ 'rate': '6.4',
+ 'release_date': '2017-05-27(日本)',
+ 'runtime': '97分钟',
+ 'starring': '艾琳·卡希尔/达林·德·保罗/布莱恩·T·德莱尼/约翰·德米塔/凯文·多曼/杰森·范特/阿里夫·S·金成/玛丽·伊丽莎白·麦格林/马修·默瑟/托尼·奥立佛/阿尼·潘托哈/亚历山大·博林斯基/凯伦·斯特拉斯曼',
+ 'title': '生化危机：复仇 バイオハザード：ヴェンデッタ'}
+2017-09-08 23:55:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/19899718/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8F%AF%E6%92%AD%E6%94%BE&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/19899718/>
+{'adaptors': '帕米拉·里本/斯泰西·哈曼/佩约',
+ 'country': ' 美国',
+ 'directors': '凯利·阿斯博瑞',
+ 'genre': '喜剧/动画/奇幻/冒险',
+ 'rate': '6.3',
+ 'release_date': '2017-04-21(中国大陆)/2017-03-25(格鲁吉亚)/2017-04-07(美国)',
+ 'runtime': '90分钟',
+ 'starring': '黛米·洛瓦托/雷恩·威尔森/乔·曼根尼罗/杰克·麦克布瑞尔/丹尼·朴迪/曼迪·帕廷金/迪·布拉雷·贝克尔/弗兰克·维尔克/米歇尔·罗德里格兹/艾丽·坎伯尔/朱莉娅·罗伯茨/阿芮尔·温特/梅根·崔娜/布雷特·马内尔/凯利·阿斯博瑞/杰克·约翰逊/加布里埃尔·伊格莱西亚斯/泰塔斯·伯吉斯/杰夫·敦哈姆/戈登·拉姆齐',
+ 'title': '蓝精灵：寻找神秘村 Smurfs: The Lost Village'}
+2017-09-08 23:55:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25818101/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8F%AF%E6%92%AD%E6%94%BE&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25818101/>
+{'adaptors': '士郎正宗/杰米·莫斯/威廉·惠勒/伊伦·克鲁格',
+ 'country': ' 美国',
+ 'directors': '鲁伯特·桑德斯',
+ 'genre': '动作/科幻/犯罪',
+ 'rate': '6.5',
+ 'release_date': '2017-04-07(中国大陆)/2017-03-29(法国)/2017-03-31(美国)',
+ 'runtime': '107分钟',
+ 'starring': '斯嘉丽·约翰逊/皮鲁·埃斯贝克/北野武/朱丽叶·比诺什/迈克尔·皮特/黄经汉/丹妮西娅·萨马尔/拉札勒斯·雷图勒/泉原豊/托万达·马尼莫/彼得·费迪南多/安娜玛丽亚·玛琳卡/丹尼尔·亨绍尔/安德鲁·斯特林/桃井薰/查尔斯·欧比/福岛莉拉/约瑟夫·纳瓦胡/迈克尔·维克特',
+ 'title': '攻壳机动队 Ghost in the Shell'}
+2017-09-08 23:55:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26602933/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8F%AF%E6%92%AD%E6%94%BE&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26602933/>
+{'adaptors': '徐静蕾/杨翌舒',
+ 'country': ' 中国大陆 / 台湾 / 香港',
+ 'directors': '徐静蕾/杨翌舒',
+ 'genre': '动作/犯罪',
+ 'rate': '4.9',
+ 'release_date': '2017-03-31(中国大陆)',
+ 'runtime': '95分钟',
+ 'starring': '白百何/黄立行/明道/李淳/李玖哲/徐静蕾/梁天',
+ 'title': '绑架者'}
+2017-09-08 23:55:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26616690/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8F%AF%E6%92%AD%E6%94%BE&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26616690/>
+{'adaptors': '庄文强',
+ 'country': ' 中国大陆',
+ 'directors': '麦兆辉/潘耀明',
+ 'genre': '剧情/动作/犯罪',
+ 'rate': '6.4',
+ 'release_date': '2017-03-31(中国大陆)',
+ 'runtime': '122分钟',
+ 'starring': '黄轩/段奕宏/郎月婷/祖峰/邢佳栋/王耀庆/王砚辉/丁勇岱/肖聪/李晓川/赵炳锐/代乐乐/陶海',
+ 'title': '非凡任务'}
+2017-09-08 23:55:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26606743/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8F%AF%E6%92%AD%E6%94%BE&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26606743/>
+{'adaptors': '李佳颖/黄海/苌江/王潮/迟海/冯元良/东野圭吾',
+ 'country': ' 中国大陆',
+ 'directors': '苏有朋',
+ 'genre': '悬疑/犯罪',
+ 'rate': '6.4',
+ 'release_date': '2017-03-31(中国大陆)',
+ 'runtime': '112分钟',
+ 'starring': '王凯/张鲁一/林心如/叶祖新/丁冠森/邓恩熙/成泰燊/赵阳/侯明昊/焉栩嘉/任熙青/李炳易/李宏/赵燕国彰',
+ 'title': '嫌疑人X的献身'}
+2017-09-08 23:55:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26266085/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8F%AF%E6%92%AD%E6%94%BE&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26266085/>
+{'adaptors': '西奥多·梅尔菲/爱德华·坎农',
+ 'country': ' 美国',
+ 'directors': '扎克·布拉夫',
+ 'genre': '喜剧/犯罪',
+ 'rate': '7.6',
+ 'release_date': '2017-04-07(美国)',
+ 'runtime': '96分钟',
+ 'starring': '迈克尔·凯恩/摩根·弗里曼/艾伦·阿金/乔伊·金/安-玛格丽特/克里斯托弗·洛伊德/彼得·塞拉菲诺威茨/马特·狄龙/玛丽亚·迪齐亚/希博汗·法隆/约翰·奥提兹/基南·汤普森/凯特琳·卡尔森/乔什·帕斯/南希·卡斯特罗',
+ 'title': '三个老枪手 Going in Style'}
+2017-09-08 23:55:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26260853/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8F%AF%E6%92%AD%E6%94%BE&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26260853/>
+{'adaptors': '克里斯·摩根/盖瑞·斯科特·汤普森',
+ 'country': ' 美国',
+ 'directors': 'F·加里·格雷',
+ 'genre': '动作/犯罪',
+ 'rate': '7.1',
+ 'release_date': '2017-04-14(美国/中国大陆)/2017-04-12(法国)',
+ 'runtime': '136分钟',
+ 'starring': '范·迪塞尔/道恩·强森/查理兹·塞隆/杰森·斯坦森/米歇尔·罗德里格兹/泰瑞斯·吉布森/卢达克里斯/库尔特·拉塞尔/娜塔莉·伊曼纽尔/卢克·伊万斯/埃尔莎·帕塔奇/克里斯托弗·海维尤/斯科特·伊斯特伍德/帕特里克·圣埃斯普利特',
+ 'title': '速度与激情8 The Fate of the Furious'}
+2017-09-08 23:55:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/11803087/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8F%AF%E6%92%AD%E6%94%BE&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:55:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/11803087/>
+{'adaptors': '迈克尔·格林/约翰·洛根/杰克·帕格恩',
+ 'country': ' 美国',
+ 'directors': '雷德利·斯科特',
+ 'genre': '科幻/惊悚/恐怖',
+ 'rate': '7.3',
+ 'release_date': '2017-06-16(中国大陆)/2017-05-10(法国)/2017-05-19(美国)',
+ 'runtime': '122分钟',
+ 'starring': '迈克尔·法斯宾德/凯瑟琳·沃特斯顿/比利·克鲁德普/丹尼·麦克布莱德/德米安·比齐尔/卡门·艾乔戈/朱西·斯莫利特/考莉·埃尔南德斯/艾米·西米茨/纳撒尼尔·迪安/亚历山大·英格兰/本杰明·里格比/乌利·拉图基孚/泰丝·哈乌布里奇/罗蕾莱·金/哈维尔·博泰特/詹姆斯·弗兰科/盖·皮尔斯/劳米·拉佩斯',
+ 'title': '异形：契约 Alien: Covenant'}
+2017-09-08 23:55:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25983044/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25983044/>
+{'adaptors': '让-克里斯托弗·卡斯特里/本·方丹',
+ 'country': ' 美国 / 英国 / 中国大陆',
+ 'directors': '李安',
+ 'genre': '剧情/战争',
+ 'rate': '8.4',
+ 'release_date': '2016-11-11(美国/中国大陆)/2016-10-15(纽约电影节)',
+ 'runtime': '113分钟',
+ 'starring': '乔·阿尔文/加内特·赫德兰/克里斯汀·斯图尔特/范·迪塞尔/李淳/麦肯兹·利/史蒂夫·马丁/克里斯·塔克/本·普拉特/阿图罗·卡斯特罗/亚斯特罗/博·纳普/伊斯梅尔·克鲁斯·科尔多瓦/巴尼·哈里斯/布鲁斯·麦金农',
+ 'title': "比利·林恩的中场战事 Billy Lynn's Long Halftime Walk"}
+2017-09-08 23:55:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25921812/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:55:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25921812/>
+{'adaptors': '周申/刘露',
+ 'country': ' 中国大陆',
+ 'directors': '周申/刘露',
+ 'genre': '剧情/喜剧',
+ 'rate': '8.3',
+ 'release_date': '2016-10-28(中国大陆)',
+ 'runtime': '111分钟',
+ 'starring': '任素汐/大力/刘帅良/裴魁山/阿如那/韩彦博/卜冠今/王堃/高阳/苏千越/查尔斯·亚瑟/王峰',
+ 'title': '驴得水'}
+2017-09-08 23:55:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26685451/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26685451/>
+{'adaptors': '提姆·约翰/玛丽亚·内申/詹姆士·鲍恩/加里·詹金斯',
+ 'country': ' 英国',
+ 'directors': '罗杰·斯波蒂伍德',
+ 'genre': '剧情/喜剧/传记',
+ 'rate': '8.1',
+ 'release_date': '2016-11-04(英国)',
+ 'runtime': '103分钟',
+ 'starring': '卢克·崔德威/猫鲍勃/露塔·格德米纳斯/琼安·弗洛加特/安东尼·海德/戴伦·伊万斯/里维拉·吉迪恩/洛琳·艾什本/阿卡巴尔·库尔塔/约翰·亨肖/贝丝·戈达德/伊万娜·贝斯克/妮娜·瓦迪娅/罗茜·伊德/鲁斯·西恩/卡罗琳·古多尔/罗伯·贾维斯/李·尼古拉斯·哈里斯/丹尼尔·斯蒂森',
+ 'title': '流浪猫鲍勃 A Street Cat Named Bob'}
+2017-09-08 23:56:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26325320/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26325320/>
+{'adaptors': '安德鲁·奈特/罗伯特·申坎',
+ 'country': ' 美国 / 澳大利亚',
+ 'directors': '梅尔·吉布森',
+ 'genre': '剧情/动作/传记/历史/战争',
+ 'rate': '8.7',
+ 'release_date': '2016-12-08(中国大陆)/2016-11-04(美国)',
+ 'runtime': '139分钟(中国大陆)',
+ 'starring': '安德鲁·加菲尔德/萨姆·沃辛顿/文斯·沃恩/雨果·维文/卢克·布雷西/泰莉莎·帕尔墨/瑞切尔·格里菲斯/纳撒尼尔·布佐尼克/理查德·劳斯伯格/马特·纳夫莱/费拉斯·迪拉尼/瑞安·柯尔/卢克·佩格勒',
+ 'title': '血战钢锯岭 Hacksaw Ridge'}
+2017-09-08 23:56:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26703158/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26703158/>
+{'adaptors': '乔纳森·佩雷拉',
+ 'country': ' 美国 / 法国',
+ 'directors': '约翰·麦登',
+ 'genre': '剧情/惊悚',
+ 'rate': '8.7',
+ 'release_date': '2016-11-11(AFI影展)/2016-12-09(美国)',
+ 'runtime': '132分钟',
+ 'starring': '杰西卡·查斯坦/古古·姆巴塔-劳/约翰·利特高/艾丽森·皮尔/迈克尔·斯图巴/马克·斯特朗/杰克·莱西/道格拉斯·史密斯/萨姆·沃特森/迪伦·贝克/恩尼斯·埃斯莫/梅格翰·法伊/亚历桑德拉·卡斯蒂略/凯尔·麦克/杰克·默里',
+ 'title': '斯隆女士 Miss Sloane'}
+2017-09-08 23:56:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26357945/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26357945/>
+{'adaptors': '彼得·博格/马特·库克/约书亚·祖特曼/保罗·塔马西/埃瑞克·约翰逊',
+ 'country': ' 美国',
+ 'directors': '彼得·博格',
+ 'genre': '剧情/惊悚/历史',
+ 'rate': '8.1',
+ 'release_date': '2016-11-17(AFI影展)/2017-01-13(美国)',
+ 'runtime': '133分钟',
+ 'starring': '马克·沃尔伯格/米歇尔·莫纳汉/J·K·西蒙斯/约翰·古德曼/梅莉莎·班诺伊/凯文·贝肯/亚历克斯·沃尔夫/蕾切尔·布罗斯纳安/埃里卡·麦克德莫特/克里斯朵夫·奥谢/文森特·库拉托拉/詹姆斯·科尔比/欧阳万成/Themo '
+             'Melikidze',
+ 'title': '爱国者日 Patriots Day'}
+2017-09-08 23:56:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26387939/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26387939/>
+{'adaptors': '比于什·古普塔/施热亚·简',
+ 'country': ' 印度',
+ 'directors': '涅提·蒂瓦里',
+ 'genre': '剧情/传记/运动',
+ 'rate': '9.1',
+ 'release_date': '2017-05-05(中国大陆)/2016-12-23(印度)',
+ 'runtime': '161分钟(印度)',
+ 'starring': '阿米尔·汗/法缇玛·萨那·纱卡/桑亚·玛荷塔/阿帕尔夏克提·库拉那/沙克希·坦沃/泽伊拉·沃西姆/苏哈妮·巴特纳格尔/里特维克·萨霍里/吉里什·库卡尼',
+ 'title': '摔跤吧！爸爸 Dangal'}
+2017-09-08 23:56:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26615208/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26615208/>
+{'adaptors': '艾莉森·施罗德/西奥多·梅尔菲/玛戈特·李·谢特利',
+ 'country': ' 美国',
+ 'directors': '西奥多·梅尔菲',
+ 'genre': '剧情/传记/历史',
+ 'rate': '8.6',
+ 'release_date': '2016-12-25(美国)',
+ 'runtime': '127分钟',
+ 'starring': '塔拉吉·P·汉森/奥克塔维亚·斯宾瑟/加奈儿·梦奈/凯文·科斯特纳/克斯汀·邓斯特/吉姆·帕森斯/马赫沙拉·阿里/阿尔迪斯·霍吉/格伦·鲍威尔/金贝利·奎恩/奥莱克·克鲁帕',
+ 'title': '隐藏人物 Hidden Figures'}
+2017-09-08 23:56:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/22263645/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/22263645/>
+{'adaptors': '约翰·霍奇/埃文·威尔什',
+ 'country': ' 英国',
+ 'directors': '丹尼·博伊尔',
+ 'genre': '剧情/犯罪',
+ 'rate': '8.0',
+ 'release_date': '2017-01-27(英国)',
+ 'runtime': '117分钟',
+ 'starring': '伊万·麦克格雷格/约翰尼·李·米勒/罗伯特·卡莱尔/艾文·布莱纳/雪莉·亨德森/安杰拉·奈迪亚科娃/史蒂文·罗伯特森/戈登·肯尼迪/西蒙·韦尔/詹姆斯·卡沙莫/梁佩诗/阿塔·雅谷伯/埃文·威尔什/凯莉·麦克唐纳/艾琳·尼古拉斯/凯文·麦克基德/艾米·曼森/波林·林奇/特丽莎·达斯科娃',
+ 'title': '猜火车2 T2 Trainspotting'}
+2017-09-08 23:56:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26145033/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26145033/>
+{'adaptors': '赛斯·格雷厄姆-史密斯/克里斯·麦克纳/埃里克·萨默斯/贾里德·斯特恩/约翰·惠廷顿/鲍勃·凯恩/比尔·芬格/杰里·西格尔/乔·舒斯特',
+ 'country': ' 美国',
+ 'directors': '克里斯·麦凯',
+ 'genre': '喜剧/动作/动画/冒险',
+ 'rate': '8.0',
+ 'release_date': '2017-03-03(中国大陆)/2017-02-10(美国)',
+ 'runtime': '105分钟',
+ 'starring': '威尔·阿奈特/罗莎里奥·道森/拉尔夫·费因斯/迈克尔·塞拉/扎克·加利凡纳基斯/珍妮·斯蕾特/玛丽亚·凯莉/查宁·塔图姆/乔纳·希尔/亚当·德维尼/柯南·奥布莱恩/杰森·曼兹沃克斯/艾迪·伊扎德/赛斯·格林/佐伊·克罗维兹/凯特 '
+             '米库契/瑞琪·琳德赫姆/杰梅奈·克莱门特/艾丽·坎伯尔',
+ 'title': '乐高蝙蝠侠大电影 The LEGO Batman Movie'}
+2017-09-08 23:56:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25765735/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25765735/>
+{'adaptors': '詹姆斯·曼高德/迈克尔·格林/斯科特·弗兰克',
+ 'country': ' 美国',
+ 'directors': '詹姆斯·曼高德',
+ 'genre': '剧情/动作/科幻',
+ 'rate': '8.3',
+ 'release_date': '2017-03-03(中国大陆/美国)/2017-02-17(柏林电影节)/2017-05-16(黑白版)',
+ 'runtime': '123分钟(中国大陆)',
+ 'starring': '休·杰克曼/帕特里克·斯图尔特/达芙妮·基恩/波伊德·霍布鲁克/斯戴芬·莫昌特/伊丽莎白·罗德里格斯/多丽丝·莫尔加多/理查德·E·格兰特/玛丽·佩顿·斯图尔特/伊利斯·尼尔/艾瑞琪·拉·塞拉/劳伦·格罗斯/胡安·贾斯帕/克日什托夫·索什斯基/萨博·班克森',
+ 'title': '金刚狼3：殊死一战 Logan'}
+2017-09-08 23:56:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/11600078/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/11600078/>
+{'adaptors': '程伟豪/陈昱俐/陈彦齐',
+ 'country': ' 台湾',
+ 'directors': '程伟豪',
+ 'genre': '悬疑/惊悚/犯罪',
+ 'rate': '8.1',
+ 'release_date': '2017-03-31(台湾)/2017-06-21(上海电影节)',
+ 'runtime': '117分钟',
+ 'starring': '庄凯勋/许玮甯/柯佳嬿/李铭顺/李淳/陈彦允/郑志伟/汤志伟/卜国耕',
+ 'title': '目击者之追凶 目擊者'}
+2017-09-08 23:56:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26593587/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26593587/>
+{'adaptors': '汤姆·弗林',
+ 'country': ' 美国',
+ 'directors': '马克·韦布',
+ 'genre': '剧情/家庭',
+ 'rate': '8.1',
+ 'release_date': '2017-04-12(美国)',
+ 'runtime': '101分钟',
+ 'starring': '克里斯·埃文斯/麦肯娜·格瑞丝/琳赛·邓肯/珍妮·斯蕾特/奥克塔维亚·斯宾瑟/迈克尔·肯德尔·卡普兰/约翰·M·杰克逊/格伦·普拉默/约翰·芬/伊丽莎白·玛维尔/坎迪斯·B·哈里斯/乔恩·斯克拉夫/乔娜·肖/朱莉·安·埃默里/吉尔·奥唐奈',
+ 'title': '天才少女 Gifted'}
+2017-09-08 23:56:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25937854/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25937854/>
+{'adaptors': '詹姆斯·古恩/丹·阿布内特/安迪·兰宁',
+ 'country': ' 美国',
+ 'directors': '詹姆斯·古恩',
+ 'genre': '动作/科幻/冒险',
+ 'rate': '8.1',
+ 'release_date': '2017-05-05(中国大陆/美国)/2017-04-19(洛杉矶首映)',
+ 'runtime': '136分钟',
+ 'starring': '克里斯·普拉特/佐伊·索尔达娜/戴夫·巴蒂斯塔/范·迪塞尔/布莱德利·库珀/凯伦·吉兰/迈克尔·鲁克/庞·克莱门捷夫/伊丽莎白·德比茨基/肖恩·古恩/库尔特·拉塞尔/克里斯·沙利文/大卫·哈塞尔霍夫/西尔维斯特·史泰龙/杨紫琼',
+ 'title': '银河护卫队2 Guardians of the Galaxy Vol. 2'}
+2017-09-08 23:56:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26694988/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26694988/>
+{'adaptors': '是枝裕和',
+ 'country': ' 日本',
+ 'directors': '是枝裕和',
+ 'genre': '剧情/家庭',
+ 'rate': '8.6',
+ 'release_date': '2016-05-18(戛纳国际电影节)/2016-05-21(日本)',
+ 'runtime': '117分钟',
+ 'starring': '阿部宽/真木阳子/小林聪美/树木希林/中川雅也/池松壮亮/桥爪功/中村友理/高桥和也/小泽征悦/峰村理惠/古馆宽治/叶山奖之/吉泽太阳',
+ 'title': '比海更深 海よりもまだ深く'}
+2017-09-08 23:56:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26307755/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26307755/>
+{'adaptors': '尹鸿承/杨徐铉',
+ 'country': ' 韩国',
+ 'directors': '尹鸿承',
+ 'genre': '剧情/家庭',
+ 'rate': '8.3',
+ 'release_date': '2016-05-19(韩国)',
+ 'runtime': '116分钟',
+ 'starring': '尹汝贞/金高银/崔珉豪/申恩廷/朴敏智/柳俊烈/金熙元/梁益准/申银贞',
+ 'title': '季春奶奶 계춘할망'}
+2017-09-08 23:56:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26362351/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26362351/>
+{'adaptors': '大森立嗣/此元和津也/宫崎大',
+ 'country': ' 日本',
+ 'directors': '大森立嗣',
+ 'genre': '剧情/喜剧',
+ 'rate': '8.2',
+ 'release_date': '2016-06-12(上海电影节)/2016-07-02(日本)',
+ 'runtime': '75分钟',
+ 'starring': '池松壮亮/菅田将晖/中条彩未/铃木卓尔/宇野祥平/冈山天音',
+ 'title': '濑户内海 セトウツミ'}
+2017-09-08 23:56:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26616436/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26616436/>
+{'adaptors': '允佳恩',
+ 'country': ' 韩国',
+ 'directors': '允佳恩',
+ 'genre': '剧情/儿童',
+ 'rate': '8.4',
+ 'release_date': '2016-06-16(韩国)',
+ 'runtime': '95分钟',
+ 'starring': '崔秀英/薛惠/李秀仁/康敏琼',
+ 'title': '我们的世界 우리들'}
+2017-09-08 23:56:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26700818/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26700818/>
+{'adaptors': '加里·詹内蒂',
+ 'country': ' 英国',
+ 'directors': '埃德·拜',
+ 'genre': '喜剧/同性',
+ 'rate': '9.3',
+ 'release_date': '2016-06-19(美国)/2016-12-16(英国)',
+ 'runtime': '47分钟',
+ 'starring': '伊恩·麦克莱恩/德里克·雅各比/弗朗西斯·德·拉·图瓦/伊万·瑞恩/玛西娅·沃伦/菲利普-沃斯/艾琳·阿特金斯/弗兰西斯·巴贝/阿利斯泰尔·布拉默/理查德·加德',
+ 'title': '极品基老伴：完结篇 Vicious Series Finale'}
+2017-09-08 23:56:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26683290/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26683290/>
+{'adaptors': '新海诚',
+ 'country': ' 日本',
+ 'directors': '新海诚',
+ 'genre': '剧情/爱情/动画',
+ 'rate': '8.5',
+ 'release_date': '2016-12-02(中国大陆)/2016-08-26(日本)',
+ 'runtime': '106分钟',
+ 'starring': '神木隆之介/上白石萌音/长泽雅美/市原悦子/成田凌/悠木碧/岛崎信长/石川界人/谷花音/寺杣昌纪/大原沙耶香/井上和彦/茶风林/加藤有花/花泽香菜/寺崎裕香',
+ 'title': '你的名字。 君の名は。'}
+2017-09-08 23:56:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25934014/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25934014/>
+{'adaptors': '达米恩·查泽雷',
+ 'country': ' 美国',
+ 'directors': '达米恩·查泽雷',
+ 'genre': '剧情/爱情/歌舞',
+ 'rate': '8.3',
+ 'release_date': '2017-02-14(中国大陆)/2016-08-31(威尼斯电影节)/2016-12-25(美国)',
+ 'runtime': '128分钟',
+ 'starring': '瑞恩·高斯林/艾玛·斯通/约翰·传奇/罗丝玛丽·德薇特/芬·维特洛克/杰西卡·罗德/水野索诺娅/考莉·埃尔南德斯/J·K·西蒙斯/汤姆·艾弗瑞特·斯科特/米根·费伊/达蒙·冈普顿/贾森·福克斯/乔什·平茨/艾米·科恩/特里·沃尔特斯/汤姆·谢尔顿/辛达·亚当斯/克劳丁·克劳迪奥/D·A·瓦拉赫/特雷弗·里斯奥尔/奥莉维亚·汉密尔顿/安娜·查泽雷/马里乌斯·代·弗里斯/妮科尔·库隆/迈尔斯·安德森/约翰·辛德曼/瓦拉里·雷·米勒/基夫·范登·霍伊维尔/佐伊·霍尔/登普西·帕皮恩/辛德拉·车',
+ 'title': '爱乐之城 La La Land'}
+2017-09-08 23:56:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26616719/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26616719/>
+{'adaptors': '弗朗索瓦·欧容/菲利普·皮亚佐',
+ 'country': ' 法国 / 德国',
+ 'directors': '弗朗索瓦·欧容',
+ 'genre': '剧情/历史/战争',
+ 'rate': '8.2',
+ 'release_date': '2016-09-03(威尼斯电影节)/2016-09-07(法国)',
+ 'runtime': '113分钟',
+ 'starring': '皮埃尔·尼内/葆拉·贝尔/恩斯特·施托兹/玛丽·格鲁伯/约翰·冯·比罗/安东·范·卢克/谢丽埃勒·克莱尔/阿丽斯·德·朗克桑/阿克塞尔·旺克/赖纳·埃格/赖纳·希尔贝斯奈德/梅林·罗斯',
+ 'title': '弗兰兹 Frantz'}
+2017-09-08 23:56:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26844922/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26844922/>
+{'adaptors': '安德烈斯·杜普拉特',
+ 'country': ' 阿根廷 / 西班牙',
+ 'directors': '加斯顿·杜帕拉特/马里亚诺·寇恩',
+ 'genre': '剧情/喜剧',
+ 'rate': '8.4',
+ 'release_date': '2016-09-04(威尼斯电影节)/2016-09-08(阿根廷)',
+ 'runtime': '118分钟',
+ 'starring': '奥斯卡·马丁内兹/达迪·布列瓦/安德丽娅·弗里杰里奥/诺拉·纳瓦斯/曼努埃尔·维森特/马塞洛·丹德烈亚/贝伦·沙瓦纳/古斯塔沃·加尔松/朱利安·拉基尔·泰拉里尼/艾玛·里维拉/尼古拉斯·德·特蕾西/丹尼尔·卡尔吉曼/亚历克西斯·洛佩兹·科斯塔/莱昂纳多·穆里亚/佩德罗·罗斯',
+ 'title': '杰出公民 El ciudadano ilustre'}
+2017-09-08 23:56:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26416603/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26416603/>
+{'adaptors': '托德·考马尔尼基/切斯利·舒伦伯格/杰弗里·札斯洛',
+ 'country': ' 美国',
+ 'directors': '克林特·伊斯特伍德',
+ 'genre': '剧情/传记/灾难',
+ 'rate': '8.3',
+ 'release_date': '2016-12-09(中国大陆)/2016-09-09(美国)',
+ 'runtime': '96分钟',
+ 'starring': '汤姆·汉克斯/艾伦·艾克哈特/劳拉·琳妮/杰瑞·费拉拉/安娜·冈/奥图姆·瑞瑟/霍特·麦克卡兰尼/克里斯·鲍尔/杰米·谢尔丹/安·库萨克/莫莉·哈根/马克斯·阿德勒/萨姆·亨廷顿/韦恩·巴斯楚普/维勒莉·玛哈菲',
+ 'title': '萨利机长 Sully'}
+2017-09-08 23:56:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26354572/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26354572/>
+{'adaptors': '加斯·詹宁斯',
+ 'country': ' 美国',
+ 'directors': '加斯·詹宁斯/克里斯托夫·卢尔德莱',
+ 'genre': '喜剧/动画/歌舞',
+ 'rate': '8.2',
+ 'release_date': '2017-02-17(中国大陆)/2016-09-11(多伦多电影节)/2016-12-21(美国)',
+ 'runtime': '108分钟',
+ 'starring': '马修·麦康纳/瑞茜·威瑟斯彭/塞思·麦克法兰/斯嘉丽·约翰逊/塔伦·埃格顿/托瑞·凯利/约翰·C·赖利/珍妮弗·桑德斯/詹妮弗·哈德森/加斯·詹宁斯/彼得·塞拉菲诺威茨/尼克·克罗尔/贝克·班尼特/杰·费罗尔/尼克·奥弗曼',
+ 'title': '欢乐好声音 Sing'}
+2017-09-08 23:56:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26586432/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26586432/>
+{'adaptors': '沃尔夫冈·赫恩多夫/拉斯·胡布里希/法提赫·阿金/哈克·波姆',
+ 'country': ' 德国',
+ 'directors': '法提赫·阿金',
+ 'genre': '剧情/喜剧',
+ 'rate': '8.3',
+ 'release_date': '2016-09-15(德国)',
+ 'runtime': '93分钟',
+ 'starring': '特里斯坦·格贝尔/阿南德·巴特比勒格/阿妮娅·文德尔/尤斯蒂娜·洪普夫/保罗·布舍/杰罗姆·赫汤蒙/麦克斯·克鲁格/乌多·萨梅尔/安雅·施耐德/纳丁·杜布瓦/亨宁·佩克/乌韦·博姆/卡特琳娜·珀罗简/萨米·苏瑞泽尔/尤利乌斯·费尔斯伯格/海伦娜·西格蒙德-舒尔茨/克劳迪亚·盖斯勒-巴丁/马克·霍泽曼/尼科尔·默西迪丝·穆勒/亚历山大·吉尔/弗雷德里克·坎普特/凯·伊沃·保利兹',
+ 'title': '契克 Tschick'}
+2017-09-08 23:56:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26881114/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26881114/>
+{'adaptors': '沃伊切赫·斯玛若夫斯基',
+ 'country': ' 波兰',
+ 'directors': '沃伊切赫·斯玛若夫斯基',
+ 'genre': '剧情/历史/战争',
+ 'rate': '8.2',
+ 'release_date': '2016-09-23(格丁尼亚电影节)/2016-10-07(波兰)',
+ 'runtime': '150分钟',
+ 'starring': '米卡丽娜·拉巴克斯/阿尔卡迪乌什·雅库比克/沃西尔·沃西尔利克/阿德里安·扎仁巴/伊莎贝拉·库纳/雅采克·布拉茨亚克/玛丽亚·索博辛斯卡/奥列桑德·兹巴拉斯基/佛罗德米尔·普罗塔西尤克/奥维克桑德尔·彻舍洛夫/莱赫·德布里克/罗曼·斯勾勒斯基/扎卡尔杰斯斯·马斯齐因斯基/米哈尔·加多姆斯基/加布里埃拉·穆斯卡拉/托马什·萨普里克',
+ 'title': '沃伦 Wołyń'}
+2017-09-08 23:56:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26580232/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26580232/>
+{'adaptors': '奥里奥尔·保罗',
+ 'country': ' 西班牙',
+ 'directors': '奥里奥尔·保罗',
+ 'genre': '悬疑/惊悚/犯罪',
+ 'rate': '8.6',
+ 'release_date': '2017-09-15(中国大陆)/2016-09-23(奇幻电影节)/2017-01-06(西班牙)',
+ 'runtime': '106分钟',
+ 'starring': '马里奥·卡萨斯/阿娜·瓦格纳/何塞·科罗纳多/巴巴拉·莱涅/弗兰塞斯克·奥雷利亚/帕科·图斯/大卫·塞尔瓦斯/伊尼戈·加斯特西/圣·耶拉莫斯/马内尔·杜维索/布兰卡·马丁内斯/佩雷·布拉索/霍尔迪·布鲁内特/鲍比·冈萨雷斯/玛蒂娜·乌尔塔多',
+ 'title': '看不见的客人 Contratiempo'}
+2017-09-08 23:56:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25815034/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25815034/>
+{'adaptors': '林超贤/朱镜祺/刘小群/谭惠贞/林明杰',
+ 'country': ' 中国大陆 / 香港',
+ 'directors': '林超贤',
+ 'genre': '动作/犯罪',
+ 'rate': '8.0',
+ 'release_date': '2016-09-30(中国大陆)',
+ 'runtime': '124分钟',
+ 'starring': '张涵予/彭于晏/孙淳/陈宝国/冯文娟/刘显达/赵健/吴旭东/吴嘉龙/卢惠光/柏华力·莫高彼斯彻/维他亚·潘斯林加姆/战立国/石占杰/伍麟凯/Zobra/魏蔓/李佳璇/郝文婷/王笑龙/任蕊/Bhubhing '
+             'Bhangsa-Ard/Achaya Vishwanath Govind/Nitidet Chery '
+             'Junphli/Keerali Sivakuae/Alyaret Junamnoong/Vattcharachai '
+             'Sunthomsin/Sarawut Kumsorn/Nongmal Bunchu/Subash A/L '
+             'Sundaramoorthy/Itthiphon/Samrit '
+             'Warin/纳卡琳·加汉/钟建龙/张敏嘉/陈沛兴/林美芬/詹姆斯·阿媞邦德/Amigo',
+ 'title': '湄公河行动'}
+2017-09-08 23:56:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26887890/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E8%B1%86%E7%93%A3%E9%AB%98%E5%88%86&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26887890/>
+{'adaptors': '',
+ 'country': ' 中国大陆',
+ 'directors': '潘礼平/陆剑梅/刘玉洁',
+ 'genre': '剧情/儿童/古装',
+ 'rate': '8.4',
+ 'release_date': '2016-10-02(中国大陆)',
+ 'runtime': '88分钟',
+ 'starring': '陶奕希/周芷莹/刘戴恩/钟奕儿/陈禹衡/李俊豪/李欣怡/罗自豪/李平波/喻峰/彭楚雅/胡轶珂/陈荣达/姚雯佳',
+ 'title': '小戏骨：白蛇传'}
+2017-09-08 23:56:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/6428088/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/6428088/>
+{'adaptors': '大野裕之',
+ 'country': ' 日本',
+ 'directors': '落合賢',
+ 'genre': '剧情/动作',
+ 'rate': '8.1',
+ 'release_date': '2014-07-12(日本)',
+ 'runtime': '104分钟',
+ 'starring': '福本清三/山本千寻/本田博太郎/合田雅吏/万田久子/峰蘭太郎/木下通博/柴田善行/尚玄/中村静香/市瀬秀和/穂のか/海老濑花/和泉ちぬ/小堀正博/高橋俊次/仁科贵/风间彻/中岛贞夫/栗塚旭/小林稔侍/松方弘树',
+ 'title': '太秦灯光下 太秦ライムライト'}
+2017-09-08 23:56:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25755599/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25755599/>
+{'adaptors': '朱利安·内尔/马克·西里加',
+ 'country': ' 法国 / 比利时',
+ 'directors': '朱利安·内尔',
+ 'genre': '喜剧',
+ 'rate': '8.0',
+ 'release_date': '2014-08-24(法国昂古莱姆电影节)/2014-10-08(法国/比利时)',
+ 'runtime': '104分钟',
+ 'starring': '洛拉·拉塞隆/露德温·塞尼耶/凯恩·科贾迪/纳塔莉·贝伊/茱莉·费里埃/莉莉·塔耶布/弗朗索瓦·罗兰',
+ 'title': '小楼的奇幻生活 Lou! Journal infime'}
+2017-09-08 23:56:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25957570/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25957570/>
+{'adaptors': 'Leslie Stewart/Annina Enckell/Hanna Hemilä/Xavier Picard/Beata '
+             'Harju/托弗·杨森',
+ 'country': ' 芬兰 Finland / 法国',
+ 'directors': 'Xavier Picard',
+ 'genre': '喜剧/动画/家庭',
+ 'rate': '8.0',
+ 'release_date': '2014-10-10(芬兰)',
+ 'runtime': '80分钟',
+ 'starring': '伊丽娜·别尔克伦德/Maria Sid/Ragni Grönblom/Alma Pöysti/Beata Harju/Mats '
+             'Långbacka/Carl-Kristian Rundman/Kristofer Gummerus/Martin '
+             'Bahne/Christoffer Strandberg/Paavo Kerosuo/Katariina '
+             'Lohiniva/C.G. Wenzel',
+ 'title': '姆明：漫游蓝湾 Muumit Rivieralla'}
+2017-09-08 23:56:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25725200/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25725200/>
+{'adaptors': '马修·德拉波特/亚历山大·德·拉·巴特里耶',
+ 'country': ' 法国',
+ 'directors': '马修·德拉波特',
+ 'genre': '剧情/惊悚',
+ 'rate': '8.1',
+ 'release_date': '2014-11-19(法国)',
+ 'runtime': '115分钟',
+ 'starring': '马修·卡索维茨/玛丽-乔西·克罗兹/埃里克·卡拉瓦卡/希欧布罕·芬内朗/奥利维尔·雷堡汀/苏菲‧卡达尼/Geneviève '
+             'Mnich/Bernard Murat/Dimitri Storoge',
+ 'title': '熟悉的陌生人 Un illustre inconnu'}
+2017-09-08 23:56:39 [scrapy.extensions.logstats] INFO: Crawled 144 pages (at 48 pages/min), scraped 126 items (at 48 items/min)
+2017-09-08 23:56:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26257313/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26257313/>
+{'adaptors': '史蒂文·莫法特',
+ 'country': ' 英国',
+ 'directors': 'Paul Wilmshurst',
+ 'genre': '剧情/科幻',
+ 'rate': '8.3',
+ 'release_date': '2014-12-25(英国)',
+ 'runtime': None,
+ 'starring': '彼得·卡帕尔迪/尼克·弗罗斯特',
+ 'title': '神秘博士：最后的圣诞 Doctor Who: Last Christmas'}
+2017-09-08 23:56:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26265989/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26265989/>
+{'adaptors': '弐瓶勉/村井贞之',
+ 'country': ' 日本',
+ 'directors': '静野孔文',
+ 'genre': '科幻/动画',
+ 'rate': '8.1',
+ 'release_date': '2015-03-06(日本)',
+ 'runtime': '134分钟',
+ 'starring': '逢坂良太/洲崎绫/丰崎爱生/子安武人/樱井孝宏/田中敦子/森なな子/金元寿子 Hisako Kanemoto',
+ 'title': '希德尼娅的骑士 剧场版 劇場版 シドニアの騎士'}
+2017-09-08 23:56:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25917756/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25917756/>
+{'adaptors': '花田十輝',
+ 'country': ' 日本',
+ 'directors': '京極尚彦',
+ 'genre': '动画',
+ 'rate': '8.2',
+ 'release_date': '2015-06-13(日本)',
+ 'runtime': '100分钟',
+ 'starring': '新田恵海/南条爱乃/内田彩/三森铃子/饭田里穗/Pile/楠田亚衣奈/久保由利香/德井青空',
+ 'title': 'Love Live! 剧场版 ラブライブ! The School Idol Movie'}
+2017-09-08 23:56:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26596361/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26596361/>
+{'adaptors': '长谷井宏纪',
+ 'country': ' 意大利 / 菲律宾 / 日本',
+ 'directors': '长谷井宏纪',
+ 'genre': '剧情/音乐',
+ 'rate': '8.1',
+ 'release_date': '2015-09-05(威尼斯电影节)/2017-07-29(日本)',
+ 'runtime': '75分钟',
+ 'starring': '西德乐·盖贝特罗/彼得·米拉里/乔马·比基尤/鲁比·鲁伊斯/雷蒙德·卡马乔',
+ 'title': '布兰卡和弹吉他的人 ブランカとギター弾き'}
+2017-09-08 23:56:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/24460604/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/24460604/>
+{'adaptors': '吉田玲子',
+ 'country': ' 日本',
+ 'directors': '水岛努',
+ 'genre': '剧情/动画',
+ 'rate': '9.0',
+ 'release_date': '2015-11-21(日本)',
+ 'runtime': '120分钟',
+ 'starring': '渊上舞/茅野爱衣/山崎真实/中上育実/井口裕香/濑户麻沙美/能登麻美子/井泽诗织/上坂堇/早见沙织/大地叶/仓田雅世/植田佳奈/福圆美里/吉冈麻耶/田中理惠/金元寿子/竹达彩奈/中原麻衣/明坂聪美/川澄绫子/伊濑茉莉也/平野绫/生天目仁美/喜多村英梨',
+ 'title': '少女与战车 剧场版 ガールズ＆パンツァー 劇場版'}
+2017-09-08 23:56:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26779555/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26779555/>
+{'adaptors': '华沙·希雷',
+ 'country': ' 美国',
+ 'directors': '碧昂丝·诺尔斯/乔纳斯·阿克伦德/卡希尔·约瑟夫',
+ 'genre': '音乐',
+ 'rate': '8.2',
+ 'release_date': '2016-04-23(美国)',
+ 'runtime': '65分钟',
+ 'starring': '碧昂丝·诺尔斯/杰斯/克洛伊·贝利/哈里·贝里/米凯拉·迪普利斯/马修·诺尔斯/蒂娜·诺尔斯/理查德·劳森/奎文赞妮·瓦利斯/塞蕾娜·威廉姆斯/赞达亚/阿曼德拉·斯坦伯格 ',
+ 'title': '柠檬水 Lemonade'}
+2017-09-08 23:56:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26655962/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26655962/>
+{'adaptors': '花田十辉/武田绫乃',
+ 'country': ' 日本',
+ 'directors': '石原立也',
+ 'genre': '剧情/喜剧/动画/音乐',
+ 'rate': '8.3',
+ 'release_date': '2016-04-23(日本)',
+ 'runtime': '103分钟',
+ 'starring': '黑泽朋世/朝井彩加/丰田萌绘/安济知佳/寿美菜子/早见沙织/茅原实里/石谷春贵/樱井孝宏',
+ 'title': '吹响悠风号：欢迎来到北宇治高中吹奏乐部 劇場版 響け！ユーフォニアム～北宇治高校吹奏楽部へようこそ～'}
+2017-09-08 23:56:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26675621/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26675621/>
+{'adaptors': '濑古浩司/樱井画门',
+ 'country': ' 日本',
+ 'directors': '濑下宽之/安藤裕章',
+ 'genre': '剧情/动画/悬疑/惊悚',
+ 'rate': '8.4',
+ 'release_date': '2016-05-06(日本)',
+ 'runtime': '106分钟',
+ 'starring': '宫野真守/细谷佳正/樱井孝宏/大塚芳忠/小松未可子/平川大辅/洲崎绫/木下浩之/福山润/小山力也/久保田民绘/野川雅史/藤卷大悟/吉野裕行/铃村健一/宫崎敦古/矢野正明/中村章吾/森川智之/齐藤壮马/坂本真绫/梶裕贵',
+ 'title': '亚人2：冲突 亜人 第2部 衝突'}
+2017-09-08 23:56:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25964200/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25964200/>
+{'adaptors': '本·鲍尔',
+ 'country': ' 英国',
+ 'directors': '多米尼·克库克',
+ 'genre': '剧情/历史',
+ 'rate': '8.1',
+ 'release_date': '2016-05-14(英国)',
+ 'runtime': '123分钟',
+ 'starring': '本尼迪克特·康伯巴奇/安德鲁·斯科特/凯莉·霍威/本·丹尼尔斯/汤姆·斯图里奇/苏菲·奥康内多/詹姆斯·弗雷特/本·迈尔斯/菲比·福克斯/安东·莱瑟/杰森·沃特金斯/阿德里安·敦巴/斯坦利·汤森德',
+ 'title': '亨利六世：第二部分 Henry VI, Part 2'}
+2017-09-08 23:56:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25964201/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25964201/>
+{'adaptors': '本·鲍尔',
+ 'country': ' 英国',
+ 'directors': '多米尼·克库克',
+ 'genre': '剧情/传记/历史',
+ 'rate': '8.5',
+ 'release_date': '2016-05-21(英国)',
+ 'runtime': '130分钟',
+ 'starring': '本尼迪克特·康伯巴奇/朱迪·丹奇/凯莉·霍威/本·丹尼尔斯/苏菲·奥康内多/詹姆斯·弗雷特/菲比·福克斯/山姆·特劳顿/卢克·崔德威',
+ 'title': '理查三世 Richard III'}
+2017-09-08 23:56:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26635319/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26635319/>
+{'adaptors': '西尾维新',
+ 'country': ' 日本',
+ 'directors': '新房昭之/尾石达也',
+ 'genre': '喜剧/动作/动画/奇幻',
+ 'rate': '8.2',
+ 'release_date': '2016-08-19(日本)',
+ 'runtime': '69分钟',
+ 'starring': '神谷浩史/坂本真绫/堀江由衣/樱井孝宏/入野自由/江原正士/大塚芳忠',
+ 'title': '伤物语2：热血篇 傷物語Ⅱ 熱血篇'}
+2017-09-08 23:56:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26914297/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26914297/>
+{'adaptors': '阿兰·布伯里勒 Alain Boublil',
+ 'country': ' 英国 / 美国',
+ 'directors': 'Brett Sullivan',
+ 'genre': '音乐/歌舞',
+ 'rate': '8.3',
+ 'release_date': '2016-10-16(英国)/2016-11-12(香港)',
+ 'runtime': '200分钟',
+ 'starring': 'Eva Noblezada/阿利斯泰尔·布拉默/乔恩·琼·布里恩斯/Jonathan Pryce/丽娅·萨隆加/Simon '
+             'Bowman/Rachelle Ann Go',
+ 'title': '《西贡小姐》二十五周年表演 Miss Saigon: The 25th Anniversary Performance'}
+2017-09-08 23:56:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26635321/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26635321/>
+{'adaptors': '西尾维新',
+ 'country': ' 日本',
+ 'directors': '新房昭之/尾石达也',
+ 'genre': '喜剧/动画/奇幻',
+ 'rate': '8.4',
+ 'release_date': '2017-01-06(日本)/2017-03-31(台湾)/2017-05-18(香港)',
+ 'runtime': '83分钟',
+ 'starring': '神谷浩史/坂本真绫/堀江由衣/樱井孝宏/入野自由/江原正士/大塚芳忠',
+ 'title': '伤物语3：冷血篇 傷物語Ⅲ 冷血篇'}
+2017-09-08 23:56:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26640849/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:56:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26640849/>
+{'adaptors': '吉野弘幸',
+ 'country': ' 日本',
+ 'directors': '阿部记之',
+ 'genre': '剧情/动画',
+ 'rate': '8.4',
+ 'release_date': '2017-01-21(日本)',
+ 'runtime': '100分钟',
+ 'starring': '小野大辅/坂本真绫/田村由加莉/诹访部顺一/福山润/大桥贤一郎/杉山纪彰/寺岛拓笃/东地宏树/梶裕贵/加藤英美里',
+ 'title': '黑执事：大西洋之书 黒執事 Book of the Atlantic'}
+2017-09-08 23:56:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/14802605/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/14802605/>
+{'adaptors': 'Prakash Jha/Sagar Pandya',
+ 'country': ' 印度',
+ 'directors': 'Prakash Jha',
+ 'genre': '剧情',
+ 'rate': '8.3',
+ 'release_date': '2012-10-24(印度)',
+ 'runtime': '147分钟',
+ 'starring': '阿俊·拉姆鲍 阿布依·多尔 Manoj Bajpai',
+ 'title': '无法避免的战争 Chakravyuh'}
+2017-09-08 23:56:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/24333957/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/24333957/>
+{'adaptors': '西蒙·阿姆斯特尔',
+ 'country': ' 英国',
+ 'directors': 'Tim Kirkby',
+ 'genre': '',
+ 'rate': '9.3',
+ 'release_date': '2012-12-31',
+ 'runtime': '58分钟',
+ 'starring': '西蒙·阿姆斯特尔',
+ 'title': '西蒙·阿姆斯特尔：麻木 Simon Amstell: Numb'}
+2017-09-08 23:56:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26425468/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26425468/>
+{'adaptors': '劳尔·加西亚/埃德加·爱伦·坡 ',
+ 'country': ' 卢森堡 / 美国 / 西班牙 / 比利时',
+ 'directors': '劳尔·加西亚',
+ 'genre': '动画/悬疑',
+ 'rate': '8.2',
+ 'release_date': '2013-02-28(卢森堡电影节)',
+ 'runtime': '73分钟',
+ 'starring': '罗杰·科曼/吉尔莫·德尔·托罗/柯奈莉亚·冯克/史蒂文·休斯/克里斯托弗·李/朱利安·山德斯/贝拉·卢戈西',
+ 'title': '奇特的故事 Extraordinary Tales'}
+2017-09-08 23:56:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/24754082/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25757182/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:56:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/24754082/>
+{'adaptors': '马科斯·伯恩斯坦/Melanie Dimantas',
+ 'country': ' 巴西',
+ 'directors': '马科斯·伯恩斯坦',
+ 'genre': '剧情',
+ 'rate': '8.5',
+ 'release_date': '2013-04-19',
+ 'runtime': '99分钟',
+ 'starring': 'João Guilherme de Ávila/José de Abreu/Fernanda Vianna/Eduardo '
+             'Dascar',
+ 'title': '我亲爱的甜橙树 Meu Pé de Laranja Lima'}
+2017-09-08 23:56:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25757182/>
+{'adaptors': '雷孝慈',
+ 'country': ' 台湾',
+ 'directors': '郭春晖',
+ 'genre': '剧情/同性/家庭',
+ 'rate': '8.2',
+ 'release_date': '2013-05-12(台湾)',
+ 'runtime': '88分钟',
+ 'starring': '白冰冰/吴慷仁/王曈/吴震亚/邱安忱/周贤忠',
+ 'title': '那天妈妈来看我 那天媽媽來看我'}
+2017-09-08 23:57:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/19955955/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/19955955/>
+{'adaptors': '亚历桑德罗·佐杜洛夫斯基',
+ 'country': ' 智利',
+ 'directors': '亚历桑德罗·佐杜洛夫斯基',
+ 'genre': '传记',
+ 'rate': '8.4',
+ 'release_date': '2013-05-18(戛纳电影节)',
+ 'runtime': '130分钟',
+ 'starring': '亚历桑德罗·佐杜洛夫斯基/Pamela Flores/Jeremias '
+             'Herskovits/布隆蒂斯·佐杜洛夫斯基/Bastián Bodenhöfer/亚当·佐杜洛夫斯基/Axel '
+             'Jodorowsky/Francisco Pizarro Saenz de Urtury/Andres Cox/Felipe '
+             'Pizarro Sáenz De Urtury/Alisarine Ducolomb',
+ 'title': '现实之舞 La danza de la realidad'}
+2017-09-08 23:57:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10455078/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10455078/>
+{'adaptors': '阿加莎·克里斯蒂/尼克·迪尔',
+ 'country': ' 英国',
+ 'directors': '约翰·史翠兰',
+ 'genre': '悬疑/犯罪',
+ 'rate': '8.1',
+ 'release_date': '2013-06-09(英国)',
+ 'runtime': '89分钟',
+ 'starring': '大卫·苏切特/佐伊·沃纳梅克/凡妮莎·柯比/格列塔·斯卡奇/伊恩·格雷',
+ 'title': '旧罪的阴影 Poirot: Elephants Can Remember'}
+2017-09-08 23:57:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26133459/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26133459/>
+{'adaptors': '',
+ 'country': ' 中国大陆',
+ 'directors': '陈为军',
+ 'genre': '',
+ 'rate': '8.9',
+ 'release_date': '2013',
+ 'runtime': '59分钟',
+ 'starring': '',
+ 'title': '出路'}
+2017-09-08 23:57:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/20521014/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/20521014/>
+{'adaptors': '马修·查普曼/Julie Sayres',
+ 'country': ' 巴西',
+ 'directors': '布鲁诺·巴列托',
+ 'genre': '同性/传记',
+ 'rate': '8.0',
+ 'release_date': '2013-08-09(巴西)',
+ 'runtime': '118分钟',
+ 'starring': '格劳瑞·皮尔丝/米兰达·奥图/特雷西·米登道夫/Marcello Airoldi/罗拉·科克/Tânia '
+             'Costa/Marianna Mac Niven/Marcio Ehrlich/特里特·威廉斯/Anna Bella',
+ 'title': '月光诗篇 Flores Raras'}
+2017-09-08 23:57:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10755367/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10755367/>
+{'adaptors': '乌贝托·帕索里尼',
+ 'country': ' 英国 / 意大利',
+ 'directors': '乌贝托·帕索里尼',
+ 'genre': '剧情',
+ 'rate': '8.3',
+ 'release_date': '2013-09-03(威尼斯电影节)',
+ 'runtime': '87分钟',
+ 'starring': '埃迪·马森/琼安·弗洛加特/Karen Drury/安德鲁·巴肯/布隆森·韦伯',
+ 'title': '寂静人生 Still Life'}
+2017-09-08 23:57:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25716096/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25716096/>
+{'adaptors': '焦华静',
+ 'country': ' 中国大陆',
+ 'directors': '曹保平',
+ 'genre': '剧情/家庭',
+ 'rate': '8.0',
+ 'release_date': '2013-10-11(华语青年影像论坛)',
+ 'runtime': '119分钟',
+ 'starring': '张雪迎/果靖霖/智一桐/代旭',
+ 'title': '狗十三'}
+2017-09-08 23:57:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25705507/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25705507/>
+{'adaptors': '马切伊·佩普日察',
+ 'country': ' 波兰',
+ 'directors': '马切伊·佩普日察',
+ 'genre': '剧情',
+ 'rate': '8.3',
+ 'release_date': '2013-10-11(波兰)',
+ 'runtime': '112分钟',
+ 'starring': '大卫·奥格尼克/多萝塔·科拉克/阿尔卡迪乌什·雅库比克/海伦娜·萨和卡/Mikolaj Roznerski/Kamil '
+             'Tkacz/Tymoteusz Marciniak/安娜·内赫雷贝茨卡/Katarzyna Zawadzka/Anna '
+             'Karczmarczyk/Agnieszka Kotlarska/Janusz '
+             'Chabior/加布里埃拉·穆斯卡拉/莱赫·德布里克/Dariusz Chojnacki',
+ 'title': '生命如此美好 Chce Się Żyć'}
+2017-09-08 23:57:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/10455077/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/10455077/>
+{'adaptors': '阿加莎·克里斯蒂/尼克·迪尔',
+ 'country': ' 英国',
+ 'directors': '汤姆·沃恩',
+ 'genre': '剧情/悬疑/犯罪',
+ 'rate': '8.2',
+ 'release_date': '2013-10-30(英国)',
+ 'runtime': '89分钟',
+ 'starring': '大卫·苏切特/佐伊·沃纳梅克/西恩·帕特维/西妮德·库萨克/斯蒂芬妮·列尼达斯',
+ 'title': "古宅迷踪 Poirot: Dead Man's Folly"}
+2017-09-08 23:57:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/5155577/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/5155577/>
+{'adaptors': '亨里希·哈丁',
+ 'country': ' 德国',
+ 'directors': 'Pepe Danquart',
+ 'genre': '剧情',
+ 'rate': '8.3',
+ 'release_date': '2013-11-05(科特布斯电影节)/2014-01-10(波兰)',
+ 'runtime': None,
+ 'starring': '赖纳·博克/詹妮特·海因/Sebastian Hülk',
+ 'title': '流浪的尤莱克 Lauf Junge lauf'}
+2017-09-08 23:57:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25892252/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25892252/>
+{'adaptors': '阿加莎·克里斯蒂/凯文·埃尔约特',
+ 'country': ' 英国',
+ 'directors': '希提·麦克唐纳',
+ 'genre': '悬疑/犯罪',
+ 'rate': '9.2',
+ 'release_date': '2013-11-13(英国)',
+ 'runtime': '90分钟',
+ 'starring': '大卫·苏切特/休·弗拉瑟/艾丹·麦克阿德尔/艾丽丝·奥尔尤因/海伦·巴克森代尔',
+ 'title': "帷幕：波洛的最后一案 Curtain: Poirot's Last Case"}
+2017-09-08 23:57:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25779712/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25779712/>
+{'adaptors': '鼻涕妞',
+ 'country': ' 中国大陆',
+ 'directors': '鼻涕妞',
+ 'genre': '爱情/动画/奇幻/冒险',
+ 'rate': '8.7',
+ 'release_date': '2014-01-01(中国大陆)',
+ 'runtime': '121分钟',
+ 'starring': '赵毅/山新/夏磊/朱雀橙/吴磊/赵岭/流月城沈胖子',
+ 'title': '古剑奇谭2：永夜初晗'}
+2017-09-08 23:57:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25812513/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25812513/>
+{'adaptors': '爱德华·贝尔格/Nele Mueller-Stöfen',
+ 'country': ' 德国',
+ 'directors': '爱德华·贝尔格',
+ 'genre': '剧情',
+ 'rate': '8.3',
+ 'release_date': '2014-02-07(德国)',
+ 'runtime': '103分钟',
+ 'starring': 'Ivo Pietzcker/Georg Arms/Jodine Johne/Johann Fohl/Luise '
+             'Heyer/Johannes Langer/雅各布·马琛茨/Nele Mueller-Stöfen/Vincent '
+             'Redetzki/Sebastian Stielke',
+ 'title': '杰克 Jack'}
+2017-09-08 23:57:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/19961143/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/19961143/>
+{'adaptors': '西田征史',
+ 'country': ' 日本',
+ 'directors': '米谷良知',
+ 'genre': '剧情/动画',
+ 'rate': '8.2',
+ 'release_date': '2014-02-08(日本)',
+ 'runtime': None,
+ 'starring': '平田广明/森田成一/中村悠一/寿美菜子',
+ 'title': '老虎和兔子：崛起 劇場版 TIGER & BUNNY -The Rising-'}
+2017-09-08 23:57:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25985175/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%86%B7%E9%97%A8%E4%BD%B3%E7%89%87&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25985175/>
+{'adaptors': 'Stephen Perry',
+ 'country': ' 美国',
+ 'directors': 'Zatella Beatty',
+ 'genre': '传记',
+ 'rate': '8.6',
+ 'release_date': '2014-04-27(美国)',
+ 'runtime': '86分钟',
+ 'starring': '阿伦·艾弗森 Allen Iverson/卡梅隆·安东尼',
+ 'title': '艾弗森 Iverson The Movie'}
+2017-09-08 23:57:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26266924/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26266924/>
+{'adaptors': '檀冰',
+ 'country': ' 中国大陆',
+ 'directors': '檀冰',
+ 'genre': '剧情/动作/爱情/战争',
+ 'rate': '4.1',
+ 'release_date': '2017-06-16(中国大陆)',
+ 'runtime': '110分钟',
+ 'starring': '李东学/迈克·泰森/史蒂文·席格/李艾/王自健/安妮克·阿斯克渥德/克罗维斯·弗昂/艾瑞克·艾伯纳尼',
+ 'title': '中国推销员'}
+2017-09-08 23:57:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26412618/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26412618/>
+{'adaptors': '梅峰/张巳阳',
+ 'country': ' 中国大陆',
+ 'directors': '李远',
+ 'genre': '剧情/爱情',
+ 'rate': '5.5',
+ 'release_date': '2017-06-16(中国大陆)',
+ 'runtime': '100分钟',
+ 'starring': '窦骁/张钧甯/邬君梅/吴刚/赵立新/俞灏明/尹馨梓/姜尘/崔文璐/陈欢/胡晴云/陈威旭/郝宣凯/李雨诺',
+ 'title': '六人晚餐'}
+2017-09-08 23:57:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26270502/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26270502/>
+{'adaptors': '陈舒/路阳/禹扬',
+ 'country': ' 中国大陆',
+ 'directors': '路阳',
+ 'genre': '剧情/动作/武侠/古装',
+ 'rate': '7.5',
+ 'release_date': '2017-07-19(中国大陆)/2017-06-18(上海电影节)',
+ 'runtime': '120分钟',
+ 'starring': '张震/杨幂/张译/雷佳音/辛芷蕾/金士杰/刘端端/武强/杨轶/李媛/吴晓亮/李洪涛/刘峰超/袁文康/马赫/刘亭作/姜晓冲/陈齐威/王仁君/周一围',
+ 'title': '绣春刀II：修罗战场'}
+2017-09-08 23:57:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26667056/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26667056/>
+{'adaptors': '査慕春',
+ 'country': ' 中国大陆',
+ 'directors': '尹鸿承',
+ 'genre': '动作/科幻',
+ 'rate': '4.8',
+ 'release_date': '2017-06-29(中国大陆)/2017-06-19(上海电影节)',
+ 'runtime': '106分钟',
+ 'starring': '杨幂/霍建华/金士杰/刘畅/张艺瀚 /王俐丹',
+ 'title': '逆时营救'}
+2017-09-08 23:57:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26754831/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26754831/>
+{'adaptors': '卢正雨/赵英俊/冷旭阳/果小丹',
+ 'country': ' 中国大陆',
+ 'directors': '卢正雨',
+ 'genre': '喜剧/动作',
+ 'rate': '6.2',
+ 'release_date': '2017-07-07(中国大陆)/2017-06-22(上海电影节)',
+ 'runtime': '116分钟',
+ 'starring': '卢正雨/郭采洁/范伟/蔡国庆/陈冲/仓田保昭/孔连顺/黄龄/杨迪/柯达/艾伦/赵英俊/魏翔/汪聪/何蓝逗',
+ 'title': '绝世高手'}
+2017-09-08 23:57:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26801782/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26801782/>
+{'adaptors': '徐兵',
+ 'country': ' 中国大陆',
+ 'directors': '徐兵',
+ 'genre': '剧情/动作/犯罪',
+ 'rate': '6.5',
+ 'release_date': '2017-06-23(中国大陆)',
+ 'runtime': '104分钟',
+ 'starring': '白举纲/连奕名/热依扎/洪剑涛/王泷正/童苡萱/戚云鹏/陈启杰/任东霖',
+ 'title': '缉枪'}
+2017-09-08 23:57:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/27061554/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/27061554/>
+{'adaptors': '薛贤坚',
+ 'country': ' 中国大陆',
+ 'directors': '薛贤坚',
+ 'genre': '剧情/爱情/同性',
+ 'rate': '5.4',
+ 'release_date': '2017-06-30(中国大陆)',
+ 'runtime': '90分钟',
+ 'starring': '杜维瀚/张家瑜/陈鹏万里/吴昱瑶/赵梦强/刘颺/余思潞',
+ 'title': '再见时光'}
+2017-09-08 23:57:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/27041519/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/27041519/>
+{'adaptors': '郭昱德/桑木天/刘博文',
+ 'country': ' 中国大陆',
+ 'directors': '桑木天/刘博文',
+ 'genre': '剧情/音乐',
+ 'rate': '7.0',
+ 'release_date': '2017-06-30(中国大陆)',
+ 'runtime': '86分钟',
+ 'starring': '杨小兰/刘頔/尹菲/叶禹含/陈洁怡/谭志玲/秦勇',
+ 'title': '哀乐女子天团'}
+2017-09-08 23:57:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/27052289/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/27052289/>
+{'adaptors': '周美玲/欧阳瑶',
+ 'country': ' 台湾',
+ 'directors': '周美玲',
+ 'genre': '剧情/同性',
+ 'rate': '6.4',
+ 'release_date': '2017-07-01(台湾-Vidol频道)',
+ 'runtime': '129分钟',
+ 'starring': '唐振刚/周厚安/李京恬/程茉/王琄',
+ 'title': '伪婚男女 偽婚男女'}
+2017-09-08 23:57:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26662798/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26662798/>
+{'adaptors': '谭广源/蔡骏/黄慧惠',
+ 'country': ' 中国大陆',
+ 'directors': '钱人豪',
+ 'genre': '剧情/悬疑/惊悚',
+ 'rate': '3.9',
+ 'release_date': '2017-07-06(中国大陆)',
+ 'runtime': '93分钟',
+ 'starring': '张智霖/梅婷/钟欣潼/耿乐/邬君梅/王水林/陈冲/高捷/林雪/连凯/万国鹏/披拉·尼迪裴善官',
+ 'title': '京城81号2 京城81号Ⅱ'}
+2017-09-08 23:57:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26787124/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26787124/>
+{'adaptors': '蒋卓原',
+ 'country': ' 中国大陆 / 台湾',
+ 'directors': '蒋卓原',
+ 'genre': '剧情',
+ 'rate': '4.0',
+ 'release_date': '2017-07-12(中国大陆)',
+ 'runtime': '98分钟',
+ 'starring': '景甜/欧豪/黑木美沙/林遣都/张宁江/尹昉/周游/丁冠森/夏恩/姜宗远/中岛广稀/刘德凯/荫山征彦/木幡龙/李方丁/大谷主水/清水泰地/蔡玮伦/潘怡安/木地雅茂',
+ 'title': '青禾男高'}
+2017-09-08 23:57:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26035290/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26035290/>
+{'adaptors': '郭子健/今何在/黄海/范文文/黄智亨',
+ 'country': ' 中国大陆',
+ 'directors': '郭子健',
+ 'genre': '剧情/动作/奇幻',
+ 'rate': '5.2',
+ 'release_date': '2017-07-13(中国大陆)',
+ 'runtime': '123分钟',
+ 'starring': '彭于晏/倪妮/余文乐/俞飞鸿/欧豪/郑爽/乔杉/杨迪/巴音/王德顺',
+ 'title': '悟空传'}
+2017-09-08 23:57:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1298871/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1298871/>
+{'adaptors': '杨德昌/吴念真',
+ 'country': ' 台湾',
+ 'directors': '杨德昌',
+ 'genre': '剧情/爱情',
+ 'rate': '8.3',
+ 'release_date': '1983/2017-07-14(台湾重映)',
+ 'runtime': '166分钟',
+ 'starring': '张艾嘉/胡因梦/徐明/毛学维/左鸣翔/颜凤娇/吴少刚/梅芳/林瑞阳/南俊/小戽斗/于守仁/孙明珠/李淑桢/罗文诚/黄玉华/李梦麟/珍妮弗·奥尼尔/侯孝贤/陈坤厚/柯一正/陶德辰/万仁/曾壮祥/小野/许淑贞/段钟沂/吴念真 '
+             'Nien-Jen Wu/李烈',
+ 'title': '海滩的一天'}
+2017-09-08 23:57:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26747836/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26747836/>
+{'adaptors': '陈木胜',
+ 'country': ' 香港',
+ 'directors': '陈木胜',
+ 'genre': '喜剧/奇幻',
+ 'rate': '4.4',
+ 'release_date': '2017-07-14(中国大陆)',
+ 'runtime': '109分钟',
+ 'starring': '古天乐/马丽/刘楚恬/黄星羱/阮兆祥/诗雅/蔡一智/蔡一杰',
+ 'title': '喵星人'}
+2017-09-08 23:57:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25823277/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25823277/>
+{'adaptors': '李晗/刘晗/麦灵/张亚亮/唐七',
+ 'country': ' 中国大陆',
+ 'directors': '赵小丁/安东尼·拉默里纳拉',
+ 'genre': '爱情/奇幻',
+ 'rate': '4.1',
+ 'release_date': '2017-08-03(中国大陆)',
+ 'runtime': '109分钟',
+ 'starring': '刘亦菲/杨洋/罗晋/严屹宽/李纯/顾璇/陈佩斯/彭子苏/张贺茗/王羽铮/塔拉',
+ 'title': '三生三世十里桃花'}
+2017-09-08 23:57:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25857966/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25857966/>
+{'adaptors': '张炭/徐照青/杨磊',
+ 'country': ' 中国大陆 / 香港',
+ 'directors': '杨磊',
+ 'genre': '喜剧/动作/爱情/奇幻',
+ 'rate': '4.8',
+ 'release_date': '2017-08-11(中国大陆)',
+ 'runtime': '108分钟',
+ 'starring': '王大陆/张天爱/任达华/盛冠森/王迅/赵健/刘俊孝/释彦能/胡兵/何穗/蒋璐霞/杜奕衡/周一围',
+ 'title': '鲛珠传'}
+2017-09-08 23:57:39 [scrapy.extensions.logstats] INFO: Crawled 193 pages (at 49 pages/min), scraped 175 items (at 49 items/min)
+2017-09-08 23:57:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26771100/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26771100/>
+{'adaptors': '刘磊',
+ 'country': ' 中国大陆',
+ 'directors': '胡一泊',
+ 'genre': '动作/动画/奇幻/冒险',
+ 'rate': '7.6',
+ 'release_date': '2017-08-11(中国大陆)',
+ 'runtime': '69分钟',
+ 'starring': '陶典/小连杀/山新/宝木中阳/边江/图特哈蒙/曹云图/笑谈/杨天翔/郭盛/阎萌萌/幽舞越山/C小调/皇贞季/藤新/邢凯新/叮当/姜广涛',
+ 'title': '星游记之风暴法米拉'}
+2017-09-08 23:57:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26969037/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26969037/>
+{'adaptors': '王章俊/邓磊',
+ 'country': ' 中国大陆',
+ 'directors': '王章俊',
+ 'genre': '喜剧/动画/儿童/奇幻/冒险',
+ 'rate': '4.8',
+ 'release_date': '2017-08-18(中国大陆)',
+ 'runtime': '90分钟',
+ 'starring': '罗玉婷/翟巍/王晓彤/孙晔',
+ 'title': '赛尔号大电影6：圣者无敌'}
+2017-09-08 23:57:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26951953/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:57:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26951953/>
+{'adaptors': '邢育森/高翔',
+ 'country': ' 中国大陆',
+ 'directors': '潘礼平/邹江/尹俊欢',
+ 'genre': '剧情/儿童/历史/古装',
+ 'rate': '8.5',
+ 'release_date': '2017-08-28(中国大陆)',
+ 'runtime': '104分钟',
+ 'starring': '陶奕希/李俊豪/葛奕德/赵晨翔/陈荣达/罗自豪/陶冰蓝/周冉/黎哲彬/祁晟原/段智文/周柯伊/赵士添',
+ 'title': '小戏骨：放开那三国'}
+2017-09-08 23:57:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26378133/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26378133/>
+{'adaptors': '李小莹/张柏瑞/贾小静',
+ 'country': ' 中国大陆',
+ 'directors': '张柏瑞',
+ 'genre': '剧情/爱情',
+ 'rate': '4.4',
+ 'release_date': '2017-04-07(中国大陆)',
+ 'runtime': '107分钟',
+ 'starring': '王德顺/李纯/班杰/胡小玲',
+ 'title': '海角有个五店市'}
+2017-09-08 23:57:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26816383/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26816383/>
+{'adaptors': '李媛/许伊萌/蓝白色(原著)',
+ 'country': ' 中国大陆',
+ 'directors': '许宏宇',
+ 'genre': '喜剧/爱情',
+ 'rate': '6.9',
+ 'release_date': '2017-04-27(中国大陆)/2017-04-08(北京电影节)',
+ 'runtime': '106分钟',
+ 'starring': '金城武/周冬雨/孙艺洲/奚梦瑶/杨祐宁/张国柱/高晓松/林志玲/赵英俊/海佟',
+ 'title': '喜欢你'}
+2017-09-08 23:57:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26352435/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26352435/>
+{'adaptors': '陆以心/端端/游凯媛',
+ 'country': ' 中国大陆 / 香港',
+ 'directors': '关智耀',
+ 'genre': '喜剧/爱情',
+ 'rate': '4.4',
+ 'release_date': '2017-04-14(中国大陆)/2017-04-11(北京电影节)',
+ 'runtime': '100分钟',
+ 'starring': '周冬雨/张孝全/纳豆/林辰唏/蔡洁/盛朗熙/郑伊健/谢依霖/许玮甯',
+ 'title': '指甲刀人魔'}
+2017-09-08 23:57:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26639958/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26639958/>
+{'adaptors': '彭浩翔/尹志文/陆以心',
+ 'country': ' 香港 / 中国大陆',
+ 'directors': '彭浩翔',
+ 'genre': '剧情/喜剧/爱情',
+ 'rate': '7.2',
+ 'release_date': '2017-04-28(中国大陆)/2017-04-11(香港电影节)/2017-04-27(香港)',
+ 'runtime': '121分钟',
+ 'starring': '余文乐/杨千嬅/蒋梦婕/曾国祥/邵音音/秦沛/王晓晨/李程彬',
+ 'title': '春娇救志明 春嬌救志明'}
+2017-09-08 23:57:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26748223/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26748223/>
+{'adaptors': '李敏',
+ 'country': ' 香港',
+ 'directors': '邱礼涛',
+ 'genre': '恐怖',
+ 'rate': '6.0',
+ 'release_date': '2017-04-17(香港电影节)/2017-05-18(香港)',
+ 'runtime': '102分钟',
+ 'starring': '黄秋生/诗雅/林家栋/麦子乐/吴俐璇',
+ 'title': '失眠'}
+2017-09-08 23:57:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26644002/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26644002/>
+{'adaptors': '李海蜀/黄彦威/媚媚猫(原著)/张秀洁/韩瑞/马月红',
+ 'country': ' 中国大陆',
+ 'directors': '李海蜀/黄彦威',
+ 'genre': '喜剧/爱情',
+ 'rate': '5.0',
+ 'release_date': '2017-04-20(中国大陆)',
+ 'runtime': '108分钟',
+ 'starring': '迪丽热巴/张云龙/高伟光/金晨/马薇薇/范湉湉/披拉·尼迪裴善官/周海媚/樊野/李彧',
+ 'title': '傲娇与偏见'}
+2017-09-08 23:57:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26882327/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26882327/>
+{'adaptors': '刘夏',
+ 'country': ' 中国大陆',
+ 'directors': '刘建华',
+ 'genre': '剧情/动作/冒险',
+ 'rate': '5.8',
+ 'release_date': '2017-04-21(中国大陆)',
+ 'runtime': '95分钟',
+ 'starring': '黄宏/刘向京/赵婷婷/孙涛/王海燕/肥龙/朱琳/秦艺伟/党晨',
+ 'title': '血狼犬'}
+2017-09-08 23:57:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26292682/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26292682/>
+{'adaptors': '朴裕焕',
+ 'country': ' 中国大陆 / 台湾 / 韩国',
+ 'directors': '朴裕焕',
+ 'genre': '剧情/悬疑/犯罪',
+ 'rate': '5.0',
+ 'release_date': '2017-04-21(中国大陆)',
+ 'runtime': '93分钟',
+ 'starring': '林依晨/姜武/陈晓/惠英红/蓝正龙/安琥/张岫云/楼学贤/郭耀仁/王道南/马国华/陈万号/张哲豪/林柔君/刘芷凌/杜知晨',
+ 'title': '神秘家族'}
+2017-09-08 23:57:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25884801/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25884801/>
+{'adaptors': '任鹏/陈正道',
+ 'country': ' 中国大陆',
+ 'directors': '陈正道',
+ 'genre': '剧情/悬疑/惊悚/犯罪',
+ 'rate': '7.2',
+ 'release_date': '2017-04-28(中国大陆)/2017-04-23(北京电影节)',
+ 'runtime': '119分钟',
+ 'starring': '黄渤/段奕宏/徐静蕾/杨子姗/梁杰理/许玮甯/王真儿/焦刚/张念骅/杜函梦/栾元晖/曹英睿',
+ 'title': '记忆大师'}
+2017-09-08 23:57:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26748673/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26748673/>
+{'adaptors': '邱礼涛/李敏',
+ 'country': ' 中国大陆 / 香港',
+ 'directors': '邱礼涛',
+ 'genre': '动作/悬疑/犯罪',
+ 'rate': '6.4',
+ 'release_date': '2017-04-28(中国大陆)',
+ 'runtime': '120分钟',
+ 'starring': '刘德华/姜武/宋佳/吴卓羲/姜皓文/王紫逸/黄日华/石修/廖启智/张竣杰/蔡瀚亿/张继聪/李国麟/骆应钧/尹扬明/卢惠光/何华超',
+ 'title': '拆弹专家'}
+2017-09-08 23:57:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26897027/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26897027/>
+{'adaptors': '黄志邦/黄国权',
+ 'country': ' 香港',
+ 'directors': '黄国权',
+ 'genre': '剧情/犯罪',
+ 'rate': '5.7',
+ 'release_date': '2017-05-04(香港)',
+ 'runtime': '100分钟',
+ 'starring': '游学修/关楚耀/赵永洪/赵咏瑶/徐伟栋/乔宝宝/汉洋/郭奕芯/李国麟/谭嘉荃/麦以马/岑珈其',
+ 'title': '同囚'}
+2017-09-08 23:57:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26907450/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26907450/>
+{'adaptors': '山田洋次/黄磊',
+ 'country': ' 中国大陆',
+ 'directors': '黄磊',
+ 'genre': '剧情/喜剧/家庭',
+ 'rate': '4.6',
+ 'release_date': '2017-05-11(中国大陆)',
+ 'runtime': '103分钟',
+ 'starring': '黄磊/海清/王迅/李立群/孙莉/魏大勋/张伟欣/任容萱/何炅/岳云鹏/孟非/闫妮/英达',
+ 'title': '麻烦家族'}
+2017-09-08 23:57:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26605946/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26605946/>
+{'adaptors': '陈文强/林惠菊',
+ 'country': ' 中国大陆 / 香港',
+ 'directors': '刘国昌',
+ 'genre': '剧情/动作/犯罪',
+ 'rate': '4.8',
+ 'release_date': '2017-05-12(中国大陆)',
+ 'runtime': '100分钟',
+ 'starring': '刘青云/林家栋/古天乐/张晋/江一燕/谭耀文/吴孟达/陈观泰/卢海鹏/楼南光/欧锦棠/林国斌/尹扬明/苗可秀/庄思敏/张建声',
+ 'title': '毒。诫 毒。誡'}
+2017-09-08 23:57:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26956641/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26956641/>
+{'adaptors': '宋丽颖',
+ 'country': ' 中国大陆',
+ 'directors': '乔梁',
+ 'genre': '剧情/爱情',
+ 'rate': '6.3',
+ 'release_date': '2017-05-19(中国大陆)',
+ 'runtime': '100分钟',
+ 'starring': '赵顺然/朱颜曼滋/姜瑞佳/高子沣/杨青/赵健雷/任帅/刘丹/姜宏波/韩昊轩/马祥睿/邓震/伍宇辰柠/赵珍妮/张鑫凯',
+ 'title': '小情书'}
+2017-09-08 23:57:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26287783/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:57:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26287783/>
+{'adaptors': '右耳/陈卓',
+ 'country': ' 中国大陆 / 美国',
+ 'directors': '陈卓',
+ 'genre': '喜剧/爱情',
+ 'rate': '3.9',
+ 'release_date': '2017-05-19(中国大陆)',
+ 'runtime': '94分钟',
+ 'starring': '张雨绮/张亮/王少雍/冷中易',
+ 'title': '不期而遇'}
+2017-09-08 23:58:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26677981/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:58:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26677981/>
+{'adaptors': '李佳颖/陈立萍/苏照彬/岛田庄司',
+ 'country': ' 中国大陆',
+ 'directors': '张荣吉',
+ 'genre': '爱情/悬疑',
+ 'rate': '4.9',
+ 'release_date': '2017-05-27(中国大陆)',
+ 'runtime': '90分钟',
+ 'starring': '黄子韬/杨采钰/杜天皓/李梦/张国柱/柯淑勤/朱芷莹/冯淬帆',
+ 'title': '夏天19岁的肖像'}
+2017-09-08 23:58:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26279202/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:58:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26279202/>
+{'adaptors': '蔡康永',
+ 'country': ' 中国大陆 / 香港 / 台湾',
+ 'directors': '蔡康永',
+ 'genre': '喜剧/爱情/奇幻',
+ 'rate': '5.6',
+ 'release_date': '2017-05-27(中国大陆/台湾)',
+ 'runtime': '90分钟',
+ 'starring': '徐熙娣/林志玲/金世佳/李子峰/陈汉典/范湉湉/傅雷/沈玉琳/梁赫群/赵正平/高山峰/马国贤/利晴天/曾恺玹/陈为民/小钟/谢依霖/仇佩佩/小甜甜/黄腾浩/郭文颐/张立东/杨升达/韩宜邦',
+ 'title': '“吃吃”的爱'}
+2017-09-08 23:58:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26382962/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:58:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26382962/>
+{'adaptors': '哈智超/周佳琳',
+ 'country': ' 中国大陆',
+ 'directors': '何蔚庭',
+ 'genre': '喜剧/奇幻',
+ 'rate': '5.5',
+ 'release_date': '2017-06-02(中国大陆)',
+ 'runtime': '105分钟',
+ 'starring': '桂纶镁/王景春/欧阳娜娜/王元也/陈坤',
+ 'title': '美好的意外'}
+2017-09-08 23:58:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26995137/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8D%8E%E8%AF%AD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:58:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26995137/>
+{'adaptors': '谈宜之',
+ 'country': ' 中国大陆',
+ 'directors': '谈宜之',
+ 'genre': '剧情',
+ 'rate': '7.2',
+ 'release_date': '2017-06-09(中国大陆)',
+ 'runtime': '97分钟',
+ 'starring': '高强/于月仙/李玉峰/二货/储毅/王玉宁',
+ 'title': '忠爱无言'}
+2017-09-08 23:58:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/11518990/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/11518990/>
+{'adaptors': '大卫·米奇欧德/迈克尔·黑斯廷斯',
+ 'country': ' 美国',
+ 'directors': '大卫·米奇欧德',
+ 'genre': '剧情/喜剧/战争',
+ 'rate': '6.0',
+ 'release_date': '2017-05-26(美国)',
+ 'runtime': '121分钟',
+ 'starring': '布拉德·皮特/安东尼·海斯/约翰·马加罗/安东尼·迈克尔·豪尔/艾莫里·科恩/托弗·戈瑞斯/丹尼尔·贝茨/艾蒙·汉道奇/RJ·赛勒/阿兰·卢克/尼古拉斯·琼斯/威尔·保尔特/勒凯斯·斯坦菲尔德/本·金斯利/梅格·提利/蒂尔达·斯文顿',
+ 'title': '战争机器 War Machine'}
+2017-09-08 23:58:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/1578714/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/1578714/>
+{'adaptors': '艾伦·海因伯格/扎克·施奈德/贾森·福克斯/威廉·马斯顿',
+ 'country': ' 美国',
+ 'directors': '派蒂·杰金斯',
+ 'genre': '动作/奇幻/冒险',
+ 'rate': '7.1',
+ 'release_date': '2017-06-02(中国大陆/美国)/2017-05-30(香港/台湾)',
+ 'runtime': '141分钟',
+ 'starring': '盖尔·加朵/克里斯·派恩/康妮·尼尔森/罗宾·怀特/丹尼·赫斯顿/大卫·休里斯/萨伊德·塔格马奥/艾文·布莱纳/尤金·布雷弗·洛克/露茜·戴维斯/埃伦娜·安纳亚/莉莉·阿斯佩尔/艾米丽·凯里/丽莎·洛文·孔斯利/安·奥戈博莫/杜晨·科洛斯',
+ 'title': '神奇女侠 Wonder Woman'}
+2017-09-08 23:58:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/7065160/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/7065160/>
+{'adaptors': '尼古拉斯·斯托勒/戴夫·皮尔奇/大卫·索伦',
+ 'country': ' 美国',
+ 'directors': '大卫·索伦',
+ 'genre': '喜剧/动作/动画',
+ 'rate': '5.4',
+ 'release_date': '2017-06-02(美国)',
+ 'runtime': '89分钟',
+ 'starring': '凯文·哈特/托马斯·米德蒂奇/艾德·赫尔姆斯/尼克·克罗尔/乔丹·皮尔/克里斯汀·沙尔/迪迪·雷斯彻/布莱恩·波塞恩/大卫·索伦/梅尔·罗德里格斯/苏珊·菲泽/琳娜·泽格/蒂凡妮·劳伦·本尼克/詹姆斯·瑞恩/莱斯利·大卫·贝克/舒格·林·彼尔德/莱斯利·尼科尔/克里斯·米勒/可可·索伦',
+ 'title': '内裤队长 Captain Underpants: The First Epic Movie'}
+2017-09-08 23:58:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26635987/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26635987/>
+{'adaptors': '罗杰·米歇尔/达芙妮·杜穆里埃',
+ 'country': ' 英国 / 美国',
+ 'directors': '罗杰·米歇尔',
+ 'genre': '剧情/爱情/悬疑',
+ 'rate': '6.2',
+ 'release_date': '2017-06-09(英国)',
+ 'runtime': '106分钟',
+ 'starring': '山姆·克拉弗林/蕾切尔·薇兹/伊恩·格雷/霍丽迪·格兰杰/波佩·李·弗里尔/安德鲁·诺/安德鲁·哈维尔/薇琪·佩珀代因/凯瑟琳·皮尔斯/路易斯·苏克/哈莉·海因斯/阿提拉·G·凯雷克斯/奥斯汀·泰勒/崔斯特瑞姆·戴维斯/斯图尔特·戴维森/克里斯·加拉鲁斯/鲍比·斯科特·弗里曼/唐·惠斯坦斯/霍莉·苏海尔',
+ 'title': '浮生梦 My Cousin Rachel'}
+2017-09-08 23:58:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/20451290/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/20451290/>
+{'adaptors': '乔·斯派茨/克里斯托弗·麦奎里',
+ 'country': ' 美国',
+ 'directors': '艾里克斯·库兹曼',
+ 'genre': '动作/奇幻/冒险',
+ 'rate': '4.8',
+ 'release_date': '2017-06-09(中国大陆/美国)',
+ 'runtime': '110分钟',
+ 'starring': '汤姆·克鲁斯/罗素·克劳/安娜贝拉·沃丽丝/索菲亚·波多拉/杰克·约翰逊/考特尼·万斯/马尔万·肯扎里/斯蒂芬·汤普森/詹姆斯·阿拉马/马修·威尔卡斯/索姆·卡皮拉/肖恩·卡梅伦·迈克尔/雷兹·肯普顿/尼尔·马斯克尔/哈维尔·博泰特/帕克·索耶',
+ 'title': '新木乃伊 The Mummy'}
+2017-09-08 23:58:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25812712/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25812712/>
+{'adaptors': '辛科·保罗/肯·道里欧',
+ 'country': ' 美国',
+ 'directors': '凯尔·巴尔达/皮埃尔·科凡/埃里克·吉伦',
+ 'genre': '喜剧/动画/冒险',
+ 'rate': '7.0',
+ 'release_date': '2017-07-07(中国大陆)/2017-06-14(安锡动画电影节)/2017-06-30(美国)',
+ 'runtime': '90分钟',
+ 'starring': '史蒂夫·卡瑞尔/克里斯汀·韦格/崔·帕克/米兰达·卡斯格拉夫/达纳·盖尔/内芙·沙雷尔/皮埃尔·科凡/史蒂夫·库根/朱莉·安德鲁斯/珍妮·斯蕾特/迈克尔·贝亚蒂/安迪·尼曼/阿德里安·奇斯卡托/布莱恩·T·德莱尼/肯·道里欧',
+ 'title': '神偷奶爸3 Despicable Me 3'}
+2017-09-08 23:58:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26687241/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26687241/>
+{'adaptors': '露西亚·安尼洛/保罗·当斯',
+ 'country': ' 美国',
+ 'directors': '露西亚·安尼洛',
+ 'genre': '喜剧',
+ 'rate': '5.5',
+ 'release_date': '2017-06-16(美国)',
+ 'runtime': '101分钟',
+ 'starring': '斯嘉丽·约翰逊/吉莉恩·贝尔/佐伊·克罗维兹/伊拉纳·格雷泽/凯特·麦克金农/保罗·当斯/瑞安·库柏/泰·布利尔/黛米·摩尔/恩里克·穆西安诺/迪恩·文特斯/科尔顿·海恩斯/帕特里克·卡莱尔/埃里克·安德烈/博·伯翰',
+ 'title': '仓皇一夜 Rough Night'}
+2017-09-08 23:58:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26383898/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26383898/>
+{'adaptors': '里克·罗曼·沃夫',
+ 'country': ' 美国',
+ 'directors': '里克·罗曼·沃夫',
+ 'genre': '剧情/惊悚/犯罪',
+ 'rate': '7.4',
+ 'release_date': '2017-06-17(洛杉矶电影节)/2017-08-18(美国)',
+ 'runtime': '121分钟',
+ 'starring': '尼古拉·科斯特-瓦尔道/蕾克·贝尔/乔·博恩瑟/杰弗里·多诺万/欧玛瑞·哈德威克/霍特·麦克卡兰尼/洁西·斯克拉姆/本杰明·布拉特/迈克尔·兰德斯/艾莫里·科恩/伊万·琼斯/胡安·巴勃罗·拉瓦/克里斯·勃朗宁/萨拉·明妮奇/基思·雅各/马特·杰拉德',
+ 'title': '一锤定音 Shot Caller'}
+2017-09-08 23:58:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/27090211/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/27090211/>
+{'adaptors': '尼克·莱瑟',
+ 'country': ' 英国',
+ 'directors': '保罗·安德鲁·威廉姆斯',
+ 'genre': '剧情/犯罪',
+ 'rate': '7.9',
+ 'release_date': '2017-06-18(英国网络)',
+ 'runtime': '61分钟',
+ 'starring': '查内尔·克雷斯韦尔/尼克·迈瑞莱格伦/阿比盖尔·劳里/刘易斯·布朗/多米尼克·卡特/阿米莉亚·克拉克/克里斯·乔奇',
+ 'title': '死于独特 Murdered for Being Different'}
+2017-09-08 23:58:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25824686/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25824686/>
+{'adaptors': '阿特·马库姆/马特·霍洛维/肯·诺兰/阿齐瓦·高斯曼',
+ 'country': ' 美国',
+ 'directors': '迈克尔·贝',
+ 'genre': '动作/科幻',
+ 'rate': '4.9',
+ 'release_date': '2017-06-23(中国大陆)/2017-06-21(美国)',
+ 'runtime': '149分钟',
+ 'starring': '马克·沃尔伯格/伊莎贝拉·莫奈/劳拉·哈德克/安东尼·霍普金斯/乔什·杜哈明/彼特·库伦/约翰·古德曼/斯坦利·图齐/桑地亚哥·卡布瑞拉/吉尔·伯明翰/渡边谦/约翰·迪·玛吉欧/弗兰克·维尔克/米彻·佩勒吉',
+ 'title': '变形金刚5：最后的骑士 Transformers: The Last Knight'}
+2017-09-08 23:58:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/2338070/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/2338070/>
+{'adaptors': '托德·斯坦因/内森·帕克',
+ 'country': ' 美国 / 澳大利亚',
+ 'directors': '保罗·柯瑞',
+ 'genre': '惊悚',
+ 'rate': '6.0',
+ 'release_date': '2017-06-30(美国)',
+ 'runtime': '98分钟',
+ 'starring': '泰莉莎·帕尔墨/米契尔·哈思曼/萨姆·里德/梅芙·德莫迪/约翰·沃特斯/瑞米·海依/西蒙娜·凯塞尔/凯瑞·阿姆斯特朗/凯蒂·麦康奈尔/杰西卡·克拉克/玛丽莎·拉蒙尼卡/理查德·戴维斯/扎拉·迈克尔斯/安吉·特里克/卡玛·莎伦/米切尔·巴特尔',
+ 'title': '绝命时钟2:22 2:22'}
+2017-09-08 23:58:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26881141/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26881141/>
+{'adaptors': '尼克·戈登',
+ 'country': ' 美国',
+ 'directors': '史蒂芬·C·米勒',
+ 'genre': '动作/惊悚',
+ 'rate': '5.2',
+ 'release_date': '2017-07-21(美国)',
+ 'runtime': '97分钟',
+ 'starring': '布鲁斯·威利斯/海登·克里斯滕森/泰·谢尔顿/梅根·伦纳德/格辛·安东尼/威廉·德莫奥/德布·G·格德勒/泰勒·乔恩·奥尔森/谢伊·巴克纳/玛吉·阿维拉/克里斯汀·岱伊',
+ 'title': '首杀 First Kill'}
+2017-09-08 23:58:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26438227/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26438227/>
+{'adaptors': '格伦·斯坦德灵',
+ 'country': ' 英国 / 新西兰',
+ 'directors': '托亚·弗莱瑟',
+ 'genre': '剧情/动作/惊悚/历史',
+ 'rate': '6.4',
+ 'release_date': '2017-08-04(新西兰电影节)/2017-09-07(新西兰)',
+ 'runtime': '94分钟',
+ 'starring': '杰米·贝尔/马克·斯特朗/艾比·考尼什/马丁·肖/本·特纳/埃蒙·埃利奥特/艾蒙·汉道奇/安得烈·格兰杰/特克赫·图哈卡/威廉·丘布/罗南·维博特/蒂姆·唐尼/马修·桑德兰/肯尼斯·克拉德/尼古拉斯·博尔顿/基普·查普曼/埃里克·科尔文/约翰·亨肖/科林·莫伊/蒂姆·皮戈特-史密斯/罗伯特·波特尔/杰·萨瑟兰/贾里德·特纳',
+ 'title': '六天 6 Days'}
+2017-09-08 23:58:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/7154408/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/7154408/>
+{'adaptors': '麦克斯·博特金/凯丽·威廉逊',
+ 'country': ' 英国 / 美国 / 法国 / 比利时',
+ 'directors': '托米·维尔科拉',
+ 'genre': '科幻/惊悚',
+ 'rate': '6.7',
+ 'release_date': '2017-08-06(洛迦诺电影节)/2017-08-18(英国)',
+ 'runtime': '123分钟',
+ 'starring': '劳米·拉佩斯/格伦·克洛斯/威廉·达福/马尔万·肯扎里/克里斯蒂安·鲁贝克/帕尔·斯维尔·哈根/托米瓦·埃敦/凯西·克莱尔/卡梅伦·杰克/柯尔斯蒂·阿弗顿/维加·霍尔/马达林·德拉甘/斯蒂格·弗洛德·亨里克森/亚历山大·阮/拉腊·德坎罗/玛丽·埃弗雷特/桑地亚哥·卡布瑞拉',
+ 'title': '猎杀星期一 What Happened to Monday?'}
+2017-09-08 23:58:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26992159/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26992159/>
+{'adaptors': '里克·阿尔瓦雷斯/科里·科勒/马龙·韦恩斯/马丁·纳森/托克尔·纳森',
+ 'country': ' 美国',
+ 'directors': '迈克尔·泰兹',
+ 'genre': '喜剧/爱情/奇幻',
+ 'rate': '5.5',
+ 'release_date': '2017-08-11(美国)',
+ 'runtime': '96分钟',
+ 'starring': '马龙·韦恩斯/雷吉娜·赫尔/丹尼斯·海斯伯特/J·T·杰克逊/斯考特·佛雷/伊丽莎·库伯/布莱恩·麦肯奈特/洛雷塔·迪瓦恩/科里·哈德里克/里克·菲茨/戴夫·谢里登/小尼尔·布朗/妮科娃·斯特普尔顿/大卫·德怀尔/康纳·布罗菲/贾罗德·瓦尔沃/杰森·戴维斯/乔尔·拉什/朱万达斯·坎迪斯',
+ 'title': '裸婚大喜 Naked'}
+2017-09-08 23:58:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26979026/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26979026/>
+{'adaptors': '布鲁斯·提姆/ 詹姆斯·克莉格',
+ 'country': ' 美国',
+ 'directors': '刘山姆',
+ 'genre': '喜剧/动作/动画/冒险',
+ 'rate': '6.2',
+ 'release_date': '2017-07-21(圣地亚哥首映)/2017-08-15(美国网络)',
+ 'runtime': '74分钟',
+ 'starring': '凯文·康瑞/梅丽莎·劳奇/帕姬·布鲁斯特/罗伦·莱斯特/凯文·迈克尔·理查德森/艾瑞克·鲍扎/特雷弗·德瓦/约翰·迪·玛吉欧/罗宾·阿特金·唐斯/罗伯·鲍森/明迪·斯特林/布鲁斯·提姆',
+ 'title': '蝙蝠侠与哈莉·奎恩 Batman and Harley Quinn'}
+2017-09-08 23:58:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/22266126/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/22266126/>
+{'adaptors': '汤姆·奥康纳',
+ 'country': ' 美国 / 香港 / 保加利亚 / 荷兰',
+ 'directors': '帕特里克·休斯',
+ 'genre': '喜剧/动作/犯罪',
+ 'rate': '7.1',
+ 'release_date': '2017-09-22(中国大陆)/2017-08-18(美国)',
+ 'runtime': '118分钟',
+ 'starring': '瑞恩·雷诺兹/塞缪尔·杰克逊/加里·奥德曼/萨尔玛·海耶克/艾洛蒂·袁/乔昆姆·德·阿尔梅达/克里斯蒂·米切尔/约瑟芬·德·拉·波美/山姆·哈兹尔丁/巴里·阿茨玛/艾比·侯斯/米哈伊尔·戈尔沃伊',
+ 'title': "王牌保镖 The Hitman's Bodyguard"}
+2017-09-08 23:58:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/27064923/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/27064923/>
+{'adaptors': '爱德华·诺麦尔',
+ 'country': ' 美国',
+ 'directors': '荒牧伸志/松本松子',
+ 'genre': '动作/科幻/动画',
+ 'rate': '5.8',
+ 'release_date': '2017-08-21(美国)',
+ 'runtime': '100分钟',
+ 'starring': '卡斯帕·凡·迪恩/迪娜·迈耶/德雷·戴维斯/露西·克里斯蒂安',
+ 'title': '星河战队：火星叛国者 Starship Troopers: Traitor of Mars'}
+2017-09-08 23:58:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/5920220/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/5920220/>
+{'adaptors': '查理·帕拉伯尼得斯/维拉斯·帕拉伯尼得斯/杰瑞米·斯莱特/大场鸫/小畑健',
+ 'country': ' 美国',
+ 'directors': '亚当·温加德',
+ 'genre': '剧情/悬疑/惊悚/犯罪/奇幻',
+ 'rate': '4.0',
+ 'release_date': '2017-08-25(美国网络)',
+ 'runtime': '101分钟',
+ 'starring': '纳特·沃尔夫/勒凯斯·斯坦菲尔德/玛格丽特·库里/谢伊·惠格姆/威廉·达福/杰森·莱尔斯/保罗·纳高奇/杰克·埃特林格/马修·凯文·安德森/克里斯·布里顿/科维西·阿梅扬/贾斯汀·斯通/克里斯蒂安·斯隆/阿汀·约翰/大卫·S·郑/杰西卡·麦丽奥德/保罗·麦克吉莱恩',
+ 'title': '死亡笔记 Death Note'}
+2017-09-08 23:58:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%81%90%E6%80%96&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%81%90%E6%80%96&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%82%AC%E7%96%91&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%82%AC%E7%96%91&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%A7%91%E5%B9%BB&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%A7%91%E5%B9%BB&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%88%B1%E6%83%85&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%88%B1%E6%83%85&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%96%9C%E5%89%A7&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%96%9C%E5%89%A7&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E4%BD%9C&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E4%BD%9C&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:39 [scrapy.extensions.logstats] INFO: Crawled 246 pages (at 53 pages/min), scraped 216 items (at 41 items/min)
+2017-09-08 23:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%97%A5%E6%9C%AC&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%97%A5%E6%9C%AC&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E9%9F%A9%E5%9B%BD&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E9%9F%A9%E5%9B%BD&sort=time&page_limit=20&page_start=0> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=20> (referer: https://movie.douban.com/j/search_tags?type=movie&tag=%E7%83%AD%E9%97%A8&source=)
+2017-09-08 23:58:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26381224/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%81%90%E6%80%96&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:58:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26381224/>
+{'adaptors': '栉木理宇/徳尾浩司',
+ 'country': ' 日本',
+ 'directors': '竹本聡志',
+ 'genre': '惊悚/恐怖',
+ 'rate': '5.1',
+ 'release_date': '2016-07-02(日本)',
+ 'runtime': '93分钟',
+ 'starring': '中山优马/岛崎遥香/大野拓朗/高桥玛莉润/安井谦太郎/大和田伸也',
+ 'title': '闹鬼校园 ホーンテッド・キャンパス'}
+2017-09-08 23:58:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26644879/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%81%90%E6%80%96&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26644879/>
+{'adaptors': '',
+ 'country': ' 美国',
+ 'directors': 'Darrell Wheat',
+ 'genre': '惊悚/恐怖',
+ 'rate': '4.3',
+ 'release_date': '2016-10-28(美国)',
+ 'runtime': '82分钟',
+ 'starring': '蕾切尔·迪皮罗/可比·毕丝·布兰顿/塞缪尔·拉森/雅姆·朗德里·埃贝尔/亚历克斯·沙弗尔/Kristen Hagen/Karri '
+             'Davis',
+ 'title': '索命APP Recovery'}
+2017-09-08 23:58:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26737483/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%82%AC%E7%96%91&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:58:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26737483/>
+{'adaptors': '余庆',
+ 'country': ' 中国大陆',
+ 'directors': '余庆',
+ 'genre': '剧情/悬疑/犯罪',
+ 'rate': '6.2',
+ 'release_date': '2016-10-16(中国大陆)',
+ 'runtime': '71分钟',
+ 'starring': '孙雪岩/万希/麻郡宜/周广真/周雪珍',
+ 'title': '特殊嫌疑犯'}
+2017-09-08 23:58:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/5327217/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%82%AC%E7%96%91&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/5327217/>
+{'adaptors': '玛丽娅·玛根蒂/劳伦·奥利弗',
+ 'country': ' 美国',
+ 'directors': '莱·拉索-扬',
+ 'genre': '剧情/悬疑',
+ 'rate': '6.4',
+ 'release_date': '2017-01-21(圣丹斯电影节)/2017-03-03(美国)',
+ 'runtime': '99分钟',
+ 'starring': '佐伊·达奇/豪斯顿·塞奇/洛根·米勒/凯恩·罗利/埃莱娜·康博里斯/吴辛惠/米达宁·拉希米/埃丽卡·特伦布莱/丽芙·休森/尼古拉斯·李/切尔西·蔻儿·吉尔/罗恩·柯蒂斯/克莱尔·玛格丽特·克里特/凯拉·孔多/阿丽尔·图里奥',
+ 'title': '忽然七日 Before I Fall'}
+2017-09-08 23:58:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26284956/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%A7%91%E5%B9%BB&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:58:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26284956/>
+{'adaptors': '清水玲子/高桥泉/大友启史',
+ 'country': ' 日本',
+ 'directors': '大友启史',
+ 'genre': '科幻/悬疑/惊悚',
+ 'rate': '5.3',
+ 'release_date': '2016-08-06(日本)',
+ 'runtime': '149分钟',
+ 'starring': '生田斗真/冈田将生/吉川晃司/松坂桃李/栗山千明/织田梨沙/椎名桔平/大森南朋/中川雅也/平山祐介/木南晴夏/大仓孝二',
+ 'title': '秘密 秘密 THE TOP SECRET'}
+2017-09-08 23:58:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26796845/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%A7%91%E5%B9%BB&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/4202976/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%88%B1%E6%83%85&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:58:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26796845/>
+{'adaptors': '奥列格·马洛维奇克/安德烈·佐洛塔廖夫',
+ 'country': ' 俄罗斯',
+ 'directors': '费奥多尔·邦达尔丘克',
+ 'genre': '剧情/爱情/科幻',
+ 'rate': '5.0',
+ 'release_date': '2017-01-26(俄罗斯)',
+ 'runtime': '130分钟',
+ 'starring': '伊琳娜·斯达森保姆/亚历山大·佩特罗夫/林奈·穆罕默托夫/欧列格·缅希科夫/谢尔盖·加尔马什/尼基塔·库库什金/柳德米拉·马克萨科娃/尼基塔·塔拉索夫',
+ 'title': '莫斯科陷落 Притяжение'}
+2017-09-08 23:58:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/4202976/>
+{'adaptors': 'Lauren Kate/尼蔻·米勒德/凯瑟琳·皮尔斯',
+ 'country': ' 美国 / 匈牙利',
+ 'directors': '斯科特·希克斯',
+ 'genre': '爱情/奇幻',
+ 'rate': '3.9',
+ 'release_date': '2017-05(中国大陆)/2016-12-02(台湾)/2016-12-29(香港)',
+ 'runtime': '91分钟',
+ 'starring': '罗拉·科克/艾狄森·蒂姆林/乔莉·理查德森/杰瑞米·艾文/马拉基·卡比/赫敏·科菲尔德/朱丽叶特·奥布瑞/肖奥纳·斯米特-麦克费/黛茜·海德/哈里森·吉尔伯特森',
+ 'title': '堕落天使 Fallen'}
+2017-09-08 23:58:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25900945/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E7%88%B1%E6%83%85&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25900945/>
+{'adaptors': '斯蒂芬·切波斯基/埃文·斯彼里奥托普洛斯/琳达·伍尔芙顿/珍妮-玛丽·勒普兰斯·德博蒙',
+ 'country': ' 美国',
+ 'directors': '比尔·康顿',
+ 'genre': '爱情/歌舞/奇幻',
+ 'rate': '7.2',
+ 'release_date': '2017-03-17(中国大陆/美国)',
+ 'runtime': '129分钟',
+ 'starring': '艾玛·沃森/丹·史蒂文斯/卢克·伊万斯/凯文·克莱恩/乔什·加德/伊万·麦克格雷格/伊恩·麦克莱恩/艾玛·汤普森/斯坦利·图齐/古古·姆巴塔-劳/奥德拉·麦克唐纳/内森·麦克/哈蒂·莫拉汉/迈克尔·吉普森/水野索诺娅/亨利·加勒特/戴尔·布兰斯顿',
+ 'title': '美女与野兽 Beauty and the Beast'}
+2017-09-08 23:58:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26717795/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%96%9C%E5%89%A7&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:58:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26717795/>
+{'adaptors': '陈玉勋/张耀升',
+ 'country': ' 中国大陆 / 台湾',
+ 'directors': '陈玉勋',
+ 'genre': '剧情/喜剧/奇幻/古装',
+ 'rate': '6.7',
+ 'release_date': '2017-01-28(中国大陆)',
+ 'runtime': '116分钟',
+ 'starring': '舒淇/王千源/张孝全/曾志伟/杨祐宁/张少怀/许杰辉/林美秀/顾宝明/陈竹昇/柯宇纶/黄健玮',
+ 'title': '健忘村'}
+2017-09-08 23:58:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26657439/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%96%9C%E5%89%A7&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:58:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26657439/>
+{'adaptors': '崔允美/金娜里/乔晟佑/金吉森',
+ 'country': ' 韩国',
+ 'directors': '金惠荣',
+ 'genre': '剧情/喜剧/奇幻',
+ 'rate': '6.7',
+ 'release_date': '2017-04-12(韩国)',
+ 'runtime': '115分钟',
+ 'starring': '尹宰文/郑素敏/申久/李日花/李美度/沈亨倬/姜其永/许嘉允/敏度希/朴明秀',
+ 'title': '爸爸是女儿 아빠는 딸'}
+2017-09-08 23:59:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26607685/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E4%BD%9C&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:59:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26607685/>
+{'adaptors': '邓肯·福尔科纳/沃伦·戴维斯',
+ 'country': ' 英国',
+ 'directors': '西蒙·韦斯特',
+ 'genre': '动作/惊悚',
+ 'rate': '5.4',
+ 'release_date': '2017-04-01(法国)/2017-09-01(英国)',
+ 'runtime': '94分钟',
+ 'starring': '康妮·尼尔森/汤姆·费尔顿/多米尼克·库珀/嘉玛·陈/泰勒·霍奇林/德里克·雅各比/奥斯汀·斯托维尔/托马斯·克莱舒曼/艾格尔·纳尔/李·尼古拉斯·哈里斯/奥莱加·费多罗/杰克·费尔布罗勒/尼科·托福利/穆罕默德·阿里/理查德·班克斯',
+ 'title': '斯特拉顿 Stratton'}
+2017-09-08 23:59:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26898064/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E5%8A%A8%E4%BD%9C&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:59:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26898064/>
+{'adaptors': 'Jonas Barnes/Keith Domingue',
+ 'country': ' 美国',
+ 'directors': '托尼·基格里奥',
+ 'genre': '动作',
+ 'rate': '4.6',
+ 'release_date': '2017-08-01(美国)',
+ 'runtime': '89分钟',
+ 'starring': '山姆·贾格/阿德琳妮·帕里奇/迈克尔·加·怀特/帕斯卡尔·休顿/泰·奥尔森/莫妮卡·甘德顿/凯拉·扎戈尔斯基/郑启蕙/马修·马斯登/麦克·多普德/玛茜·T·豪斯/扎夫·帕鲁',
+ 'title': '反恐特警组：潜龙突围 S.W.A.T.: Under Siege'}
+2017-09-08 23:59:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26642163/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%97%A5%E6%9C%AC&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:59:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26642163/>
+{'adaptors': '黑泽久子/中泽日菜子',
+ 'country': ' 日本',
+ 'directors': '棚田由纪',
+ 'genre': '剧情/喜剧',
+ 'rate': '7.7',
+ 'release_date': '2016-10-08(日本)',
+ 'runtime': '119分钟',
+ 'starring': '上野树里/中川雅也/藤龙也/长谷川朝晴/安藤圣/渡边绘里',
+ 'title': '父亲与伊藤先生 お父さんと伊藤さん'}
+2017-09-08 23:59:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26823828/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%97%A5%E6%9C%AC&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:59:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26823828/>
+{'adaptors': '相泽友子',
+ 'country': ' 日本',
+ 'directors': '铃木雅之',
+ 'genre': '喜剧',
+ 'rate': '6.2',
+ 'release_date': '2017-01-14(日本)',
+ 'runtime': '119分钟',
+ 'starring': '绫濑遥/堤真一/滨田岳/平山浩行/田口浩正/高岛政宏/近藤正臣/风间杜夫/八岛智人/平岩纸/宇梶刚士/飯尾和樹/加藤谅',
+ 'title': '本能寺酒店 本能寺ホテル'}
+2017-09-08 23:59:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26877415/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E9%9F%A9%E5%9B%BD&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:59:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26877415/>
+{'adaptors': '金恩熙',
+ 'country': ' 韩国',
+ 'directors': '张恒俊',
+ 'genre': '剧情',
+ 'rate': '7.2',
+ 'release_date': '2016-09-15(韩国)',
+ 'runtime': '87分钟',
+ 'starring': '刘在锡/郑俊河/河东勋/朴明秀/黄光熙/权志龙/国村隼/郑亨敦/李帝勋/金惠秀',
+ 'title': '无限商社2016：危机的公司职员 2016무한상사위기의회사원'}
+2017-09-08 23:59:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26715549/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E9%9F%A9%E5%9B%BD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:59:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26715549/>
+{'adaptors': '李祖英',
+ 'country': ' 韩国',
+ 'directors': '李祖英',
+ 'genre': '剧情',
+ 'rate': '6.8',
+ 'release_date': '2017-02-22(韩国)',
+ 'runtime': '97分钟',
+ 'starring': '李秉宪/孔晓振/安昭熙/本尼迪克·哈迪/杰克·坎贝尔/凯茨·托马斯',
+ 'title': '单身骑士 싱글라이더'}
+2017-09-08 23:59:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/25884712/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:59:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/25884712/>
+{'adaptors': '克里斯·罗斯纳',
+ 'country': ' 美国',
+ 'directors': '费尔南多·科英布拉',
+ 'genre': '剧情/战争',
+ 'rate': '6.5',
+ 'release_date': '2017-04-21(美国)',
+ 'runtime': '113分钟',
+ 'starring': '亨利·卡维尔/汤米·弗拉纳根/尼古拉斯·霍尔特/罗根·马歇尔-格林/格伦·鲍威尔/博·纳普/小尼尔·布朗/萨姆·斯普卢尔 '
+             '/纳维德·内加班/帕克·索耶/冈萨洛·门内德斯/萨米·谢伊克/纳比勒·埃卢比/齐亚德·阿巴扎/索佩·迪瑞苏/尼古拉斯·雅各布/奥赛·伊克希尔',
+ 'title': '沙堡 Sand Castle'}
+2017-09-08 23:59:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26610786/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:59:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26610786/>
+{'adaptors': '帕梅拉·格雷/安妮·玛莫罗/蒂姆·洛夫斯特特',
+ 'country': ' 美国',
+ 'directors': '加芙列拉·考珀斯维特',
+ 'genre': '剧情/传记/战争',
+ 'rate': '7.1',
+ 'release_date': '2017-05-07(蒙特克莱电影节)/2017-06-09(美国)',
+ 'runtime': '116分钟',
+ 'starring': '凯特·玛拉/汤姆·费尔顿/布莱德利·惠特福德/杰拉丁妮·詹姆斯/科曼/埃迪·法可/威尔·帕顿/拉蒙·罗德里格兹/珊农·塔伯特/米格尔·戈麦斯/乔纳森·霍华德/乔治·韦伯斯特/克里·约翰逊/山姆·基利/凯萨琳·戴尔/迈尔斯·穆森登/玛丽娜·马修斯/帕克·索耶',
+ 'title': '梅根·利维 Megan Leavey'}
+2017-09-08 23:59:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26761688/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E6%AC%A7%E7%BE%8E&sort=time&page_limit=20&page_start=20)
+2017-09-08 23:59:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26761688/>
+{'adaptors': '德温·沃勒尔',
+ 'country': ' 美国',
+ 'directors': '道格·里曼',
+ 'genre': '剧情/惊悚/战争',
+ 'rate': '6.9',
+ 'release_date': '2017-05-12(美国)',
+ 'runtime': '90分钟',
+ 'starring': '亚伦·泰勒-约翰逊/约翰·塞纳/莱斯·纳克里',
+ 'title': '生死之墙 The Wall'}
+2017-09-08 23:59:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26701239/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E9%9F%A9%E5%9B%BD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:59:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26701239/>
+{'adaptors': '赵杰民',
+ 'country': ' 韩国',
+ 'directors': '赵杰民',
+ 'genre': '剧情',
+ 'rate': '6.6',
+ 'release_date': '2017-03-01(韩国)',
+ 'runtime': '91分钟',
+ 'starring': '朴珍荣/智友/辛安金/郑娜恩/姜明盖',
+ 'title': '雪花 눈발'}
+2017-09-08 23:59:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26574949/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E9%9F%A9%E5%9B%BD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:59:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26574949/>
+{'adaptors': '李受妍',
+ 'country': ' 韩国',
+ 'directors': '李受妍',
+ 'genre': '惊悚/犯罪',
+ 'rate': '6.4',
+ 'release_date': '2017-03-01(韩国)',
+ 'runtime': '117分钟',
+ 'starring': '赵震雄/金大明/申久/宋永彰/李清娥',
+ 'title': '解冻 해빙'}
+2017-09-08 23:59:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26862892/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E9%9F%A9%E5%9B%BD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:59:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26862892/>
+{'adaptors': '金德洙',
+ 'country': ' 韩国',
+ 'directors': '金德洙',
+ 'genre': '喜剧/动作',
+ 'rate': '5.2',
+ 'release_date': '2017-03-16(韩国)',
+ 'runtime': '117分钟',
+ 'starring': '姜艺媛/韩彩雅/南宫珉/赵在允',
+ 'title': '非正式特工 비정규직 특수요원'}
+2017-09-08 23:59:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26781663/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E9%9F%A9%E5%9B%BD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:59:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26781663/>
+{'adaptors': '萨木艾',
+ 'country': ' 韩国',
+ 'directors': '金凤汉',
+ 'genre': '剧情/动作/犯罪',
+ 'rate': '6.5',
+ 'release_date': '2017-03-23(韩国)',
+ 'runtime': '121分钟',
+ 'starring': '孙贤周/张赫/罗美兰/赵达焕/金相浩/孙秉浩/吴妍儿/周锡泰/朴智一/池胜铉',
+ 'title': '普通人 보통사람'}
+2017-09-08 23:59:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26577180/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E9%9F%A9%E5%9B%BD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:59:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26577180/>
+{'adaptors': '罗贤',
+ 'country': ' 韩国',
+ 'directors': '罗贤',
+ 'genre': '动作/犯罪',
+ 'rate': '6.5',
+ 'release_date': '2017-03-23(韩国)',
+ 'runtime': '125分钟',
+ 'starring': '韩石圭/金来沅/金成钧/姜信日/赵在允/申成禄',
+ 'title': '叛狱无间 프리즌'}
+2017-09-08 23:59:16 [scrapy.crawler] INFO: Received SIG_UNBLOCK, shutting down gracefully. Send again to force 
+2017-09-08 23:59:16 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-09-08 23:59:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/subject/26598291/> (referer: https://movie.douban.com/j/search_subjects?type=movie&tag=%E9%9F%A9%E5%9B%BD&sort=time&page_limit=20&page_start=0)
+2017-09-08 23:59:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/subject/26598291/>
+{'adaptors': '杨景模',
+ 'country': ' 韩国',
+ 'directors': '杨景模',
+ 'genre': '剧情/犯罪',
+ 'rate': '6.6',
+ 'release_date': '2017-03-29(韩国)',
+ 'runtime': '131分钟',
+ 'starring': '任时完/朴有焕/晋久/朴秉恩/李东辉/王智媛/金善映',
+ 'title': '一条龙 원라인'}
+2017-09-08 23:59:17 [scrapy.crawler] INFO: Received SIG_UNBLOCK twice, forcing unclean shutdown

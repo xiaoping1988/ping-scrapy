@@ -1,0 +1,12 @@
+Thumbs.db
+*.iml
+.idea
+.idea/
+.project
+.classpath
+.settings
+.apt_generated
+.tmp
+.DS_Store
+target/
+logs/
